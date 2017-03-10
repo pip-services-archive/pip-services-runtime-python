@@ -1,0 +1,7 @@
+pip_services_runtime.logs.ConsoleLogger module
+==============================================
+
+.. automodule:: pip_services_runtime.logs.ConsoleLogger
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>pip_services_runtime.services.RestService module &mdash; Pip.Services Runtime for Python API</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Pip.Services Runtime for Python API" href="index.html" />
+    <link rel="up" title="pip_services_runtime.services package" href="pip_services_runtime.services.html" />
+    <link rel="next" title="pip_services_runtime.services.SimpleServer module" href="pip_services_runtime.services.SimpleServer.html" />
+    <link rel="prev" title="pip_services_runtime.services.AbstractService module" href="pip_services_runtime.services.AbstractService.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-pip_services_runtime.services.RestService">
+<span id="pip-services-runtime-services-restservice-module"></span><h1>pip_services_runtime.services.RestService module<a class="headerlink" href="#module-pip_services_runtime.services.RestService" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="pip-services-runtime-services-restservice">
+<h2>pip_services_runtime.services.RestService<a class="headerlink" href="#pip-services-runtime-services-restservice" title="Permalink to this headline">¶</a></h2>
+<p>REST service implementation</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">copyright:</th><td class="field-body">Digital Living Software Corp. 2015-2016, see AUTHORS for more details.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">license:</th><td class="field-body">MIT, see LICENSE for more details.</td>
+</tr>
+</tbody>
+</table>
+<dl class="class">
+<dt id="pip_services_runtime.services.RestService.RestService">
+<em class="property">class </em><code class="descclassname">pip_services_runtime.services.RestService.</code><code class="descname">RestService</code><span class="sig-paren">(</span><em>descriptor</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.services.RestService.RestService" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pip_services_runtime.services.AbstractService.html#pip_services_runtime.services.AbstractService.AbstractService" title="pip_services_runtime.services.AbstractService.AbstractService"><code class="xref py py-class docutils literal"><span class="pre">pip_services_runtime.services.AbstractService.AbstractService</span></code></a></p>
+<p>Interoperable REST service that exposes a specific version of 
+a microservice API via HTTP/HTTPS endpoint to consumers.</p>
+<p>This implementation uses restify library to define RESTful API.
+Authors of specific REST services must register in descendant classes 
+API routes using <em>registerRoute</em> in overriden <em>link</em> or <em>register</em> methods.</p>
+<dl class="method">
+<dt id="pip_services_runtime.services.RestService.RestService.close">
+<code class="descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.services.RestService.RestService.close" title="Permalink to this definition">¶</a></dt>
+<dd><p>Closes the component and all open connections, performs deinitialization
+steps. Closure can only be done from opened state. Attempts to close
+already closed component or in wrong order will cause exception.</p>
+<p>Returns: None</p>
+<dl class="docutils">
+<dt>Raises:</dt>
+<dd>MicroserviceError: with closure fails.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.services.RestService.RestService.configure">
+<code class="descname">configure</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.services.RestService.RestService.configure" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets component configuration parameters and switches from component
+to &#8216;Configured&#8217; state. The configuration is only allowed once
+right after creation. Attempts to perform reconfiguration will cause an exception.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>config: the component configuration parameters.</dd>
+</dl>
+<p>Returns: None</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>MicroserviceError: when component is in illegal state or configuration validation fails.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.services.RestService.RestService.get_correlation_id">
+<code class="descname">get_correlation_id</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.services.RestService.RestService.get_correlation_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.services.RestService.RestService.get_data">
+<code class="descname">get_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.services.RestService.RestService.get_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.services.RestService.RestService.get_filter_params">
+<code class="descname">get_filter_params</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.services.RestService.RestService.get_filter_params" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.services.RestService.RestService.get_paging_params">
+<code class="descname">get_paging_params</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.services.RestService.RestService.get_paging_params" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.services.RestService.RestService.get_param">
+<code class="descname">get_param</code><span class="sig-paren">(</span><em>param</em>, <em>default=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.services.RestService.RestService.get_param" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.services.RestService.RestService.link">
+<code class="descname">link</code><span class="sig-paren">(</span><em>components</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.services.RestService.RestService.link" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets references to other microservice components to enable their 
+collaboration. It is recommended to locate necessary components
+and cache their references to void performance hit during normal operations.</p>
+<p>Linking can only be performed once after configuration 
+and will cause an exception when it is called second time or out of order.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>components: references to microservice components.</dd>
+</dl>
+<p>Returns: None</p>
+<dl class="docutils">
+<dt>Raises:</dt>
+<dd>MicroserviceError: when requires components are not found.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.services.RestService.RestService.open">
+<code class="descname">open</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.services.RestService.RestService.open" title="Permalink to this definition">¶</a></dt>
+<dd><p>Opens the component, performs initialization, opens connections
+to external services and makes the component ready for operations.
+Opening can be done multiple times: right after linking or reopening after closure.</p>
+<p>Returns: None</p>
+<dl class="docutils">
+<dt>Raises:</dt>
+<dd>MicroserviceError: when initialization or connections fail.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.services.RestService.RestService.register">
+<code class="descname">register</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.services.RestService.RestService.register" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.services.RestService.RestService.register_route">
+<code class="descname">register_route</code><span class="sig-paren">(</span><em>method</em>, <em>route</em>, <em>handler</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.services.RestService.RestService.register_route" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.services.RestService.RestService.send_created_result">
+<code class="descname">send_created_result</code><span class="sig-paren">(</span><em>result</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.services.RestService.RestService.send_created_result" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.services.RestService.RestService.send_deleted_result">
+<code class="descname">send_deleted_result</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.services.RestService.RestService.send_deleted_result" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.services.RestService.RestService.send_error">
+<code class="descname">send_error</code><span class="sig-paren">(</span><em>error</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.services.RestService.RestService.send_error" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.services.RestService.RestService.send_result">
+<code class="descname">send_result</code><span class="sig-paren">(</span><em>result</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.services.RestService.RestService.send_result" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">pip_services_runtime.services.RestService module</a><ul>
+<li><a class="reference internal" href="#pip-services-runtime-services-restservice">pip_services_runtime.services.RestService</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="pip_services_runtime.html">pip_services_runtime package</a><ul>
+  <li><a href="pip_services_runtime.services.html">pip_services_runtime.services package</a><ul>
+      <li>Previous: <a href="pip_services_runtime.services.AbstractService.html" title="previous chapter">pip_services_runtime.services.AbstractService module</a></li>
+      <li>Next: <a href="pip_services_runtime.services.SimpleServer.html" title="next chapter">pip_services_runtime.services.SimpleServer module</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/pip_services_runtime.services.RestService.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Digital Living Software Corp..
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+      |
+      <a href="_sources/pip_services_runtime.services.RestService.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

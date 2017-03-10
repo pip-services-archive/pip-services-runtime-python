@@ -1,0 +1,7 @@
+pip_services_runtime.clients.DirectClient module
+================================================
+
+.. automodule:: pip_services_runtime.clients.DirectClient
+    :members:
+    :undoc-members:
+    :show-inheritance:

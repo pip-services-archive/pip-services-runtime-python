@@ -1,0 +1,7 @@
+pip_services_runtime.data.PagingParams module
+=============================================
+
+.. automodule:: pip_services_runtime.data.PagingParams
+    :members:
+    :undoc-members:
+    :show-inheritance:

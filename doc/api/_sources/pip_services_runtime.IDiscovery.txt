@@ -1,0 +1,7 @@
+pip_services_runtime.IDiscovery module
+======================================
+
+.. automodule:: pip_services_runtime.IDiscovery
+    :members:
+    :undoc-members:
+    :show-inheritance:

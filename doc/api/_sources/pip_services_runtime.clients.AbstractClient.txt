@@ -1,0 +1,7 @@
+pip_services_runtime.clients.AbstractClient module
+==================================================
+
+.. automodule:: pip_services_runtime.clients.AbstractClient
+    :members:
+    :undoc-members:
+    :show-inheritance:

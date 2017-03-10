@@ -1,0 +1,7 @@
+pip_services_runtime.errors.ConnectionError module
+==================================================
+
+.. automodule:: pip_services_runtime.errors.ConnectionError
+    :members:
+    :undoc-members:
+    :show-inheritance:

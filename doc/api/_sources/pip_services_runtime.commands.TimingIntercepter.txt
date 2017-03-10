@@ -1,0 +1,7 @@
+pip_services_runtime.commands.TimingIntercepter module
+======================================================
+
+.. automodule:: pip_services_runtime.commands.TimingIntercepter
+    :members:
+    :undoc-members:
+    :show-inheritance:

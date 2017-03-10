@@ -1,0 +1,7 @@
+pip_services_runtime.IClient module
+===================================
+
+.. automodule:: pip_services_runtime.IClient
+    :members:
+    :undoc-members:
+    :show-inheritance:

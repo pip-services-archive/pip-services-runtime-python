@@ -1,0 +1,20 @@
+pip_services_runtime.build package
+==================================
+
+Submodules
+----------
+
+.. toctree::
+
+   pip_services_runtime.build.Builder
+   pip_services_runtime.build.ComponentFactory
+   pip_services_runtime.build.DefaultFactory
+   pip_services_runtime.build.FactoryRegistration
+
+Module contents
+---------------
+
+.. automodule:: pip_services_runtime.build
+    :members:
+    :undoc-members:
+    :show-inheritance:

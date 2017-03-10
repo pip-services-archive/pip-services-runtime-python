@@ -1,0 +1,7 @@
+pip_services_runtime.cache.MemoryCache module
+=============================================
+
+.. automodule:: pip_services_runtime.cache.MemoryCache
+    :members:
+    :undoc-members:
+    :show-inheritance:

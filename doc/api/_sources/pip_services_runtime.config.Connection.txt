@@ -1,0 +1,7 @@
+pip_services_runtime.config.Connection module
+=============================================
+
+.. automodule:: pip_services_runtime.config.Connection
+    :members:
+    :undoc-members:
+    :show-inheritance:

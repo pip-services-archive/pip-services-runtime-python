@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>pip_services_runtime.config.Category module &mdash; Pip.Services Runtime for Python API</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Pip.Services Runtime for Python API" href="index.html" />
+    <link rel="up" title="pip_services_runtime.config package" href="pip_services_runtime.config.html" />
+    <link rel="next" title="pip_services_runtime.config.ComponentConfig module" href="pip_services_runtime.config.ComponentConfig.html" />
+    <link rel="prev" title="pip_services_runtime.config package" href="pip_services_runtime.config.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-pip_services_runtime.config.Category">
+<span id="pip-services-runtime-config-category-module"></span><h1>pip_services_runtime.config.Category module<a class="headerlink" href="#module-pip_services_runtime.config.Category" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="pip-services-runtime-config-category">
+<h2>pip_services_runtime.config.Category<a class="headerlink" href="#pip-services-runtime-config-category" title="Permalink to this headline">¶</a></h2>
+<p>Components category enumeration</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">copyright:</th><td class="field-body">Digital Living Software Corp. 2015-2016, see AUTHORS for more details.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">license:</th><td class="field-body">MIT, see LICENSE for more details.</td>
+</tr>
+</tbody>
+</table>
+<dl class="class">
+<dt id="pip_services_runtime.config.Category.Category">
+<em class="property">class </em><code class="descclassname">pip_services_runtime.config.Category.</code><code class="descname">Category</code><a class="headerlink" href="#pip_services_runtime.config.Category.Category" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Category of components or configuration sections that are used to configure components.</p>
+<dl class="attribute">
+<dt id="pip_services_runtime.config.Category.Category.Addons">
+<code class="descname">Addons</code><em class="property"> = 'addons'</em><a class="headerlink" href="#pip_services_runtime.config.Category.Category.Addons" title="Permalink to this definition">¶</a></dt>
+<dd><p>Various microservice addons / extension components</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.config.Category.Category.Boot">
+<code class="descname">Boot</code><em class="property"> = 'boot'</em><a class="headerlink" href="#pip_services_runtime.config.Category.Category.Boot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bootstap configuration readers</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.config.Category.Category.BusinessLogic">
+<code class="descname">BusinessLogic</code><em class="property"> = 'logic'</em><a class="headerlink" href="#pip_services_runtime.config.Category.Category.BusinessLogic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Any business logic component - controller or decorator</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.config.Category.Category.Cache">
+<code class="descname">Cache</code><em class="property"> = 'cache'</em><a class="headerlink" href="#pip_services_runtime.config.Category.Category.Cache" title="Permalink to this definition">¶</a></dt>
+<dd><p>Value caches</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.config.Category.Category.Clients">
+<code class="descname">Clients</code><em class="property"> = 'clients'</em><a class="headerlink" href="#pip_services_runtime.config.Category.Category.Clients" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clients to other microservices or infrastructure services</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.config.Category.Category.Controllers">
+<code class="descname">Controllers</code><em class="property"> = 'controllers'</em><a class="headerlink" href="#pip_services_runtime.config.Category.Category.Controllers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Business logic controllers</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.config.Category.Category.Counters">
+<code class="descname">Counters</code><em class="property"> = 'counters'</em><a class="headerlink" href="#pip_services_runtime.config.Category.Category.Counters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performance counters</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.config.Category.Category.Decorators">
+<code class="descname">Decorators</code><em class="property"> = 'decorators'</em><a class="headerlink" href="#pip_services_runtime.config.Category.Category.Decorators" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decorators to business logic controllers</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.config.Category.Category.Discovery">
+<code class="descname">Discovery</code><em class="property"> = 'discovery'</em><a class="headerlink" href="#pip_services_runtime.config.Category.Category.Discovery" title="Permalink to this definition">¶</a></dt>
+<dd><p>Service discovery components</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.config.Category.Category.Factories">
+<code class="descname">Factories</code><em class="property"> = 'factories'</em><a class="headerlink" href="#pip_services_runtime.config.Category.Category.Factories" title="Permalink to this definition">¶</a></dt>
+<dd><p>Component factories</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.config.Category.Category.Logs">
+<code class="descname">Logs</code><em class="property"> = 'logs'</em><a class="headerlink" href="#pip_services_runtime.config.Category.Category.Logs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Logging components</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.config.Category.Category.Persistence">
+<code class="descname">Persistence</code><em class="property"> = 'persistence'</em><a class="headerlink" href="#pip_services_runtime.config.Category.Category.Persistence" title="Permalink to this definition">¶</a></dt>
+<dd><p>Persistence components</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.config.Category.Category.Services">
+<code class="descname">Services</code><em class="property"> = 'services'</em><a class="headerlink" href="#pip_services_runtime.config.Category.Category.Services" title="Permalink to this definition">¶</a></dt>
+<dd><p>API Services</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.config.Category.Category.Undefined">
+<code class="descname">Undefined</code><em class="property"> = 'undefined'</em><a class="headerlink" href="#pip_services_runtime.config.Category.Category.Undefined" title="Permalink to this definition">¶</a></dt>
+<dd><p>Undefined category</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">pip_services_runtime.config.Category module</a><ul>
+<li><a class="reference internal" href="#pip-services-runtime-config-category">pip_services_runtime.config.Category</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="pip_services_runtime.html">pip_services_runtime package</a><ul>
+  <li><a href="pip_services_runtime.config.html">pip_services_runtime.config package</a><ul>
+      <li>Previous: <a href="pip_services_runtime.config.html" title="previous chapter">pip_services_runtime.config package</a></li>
+      <li>Next: <a href="pip_services_runtime.config.ComponentConfig.html" title="next chapter">pip_services_runtime.config.ComponentConfig module</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/pip_services_runtime.config.Category.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Digital Living Software Corp..
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+      |
+      <a href="_sources/pip_services_runtime.config.Category.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

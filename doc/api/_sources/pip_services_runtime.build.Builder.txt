@@ -1,0 +1,7 @@
+pip_services_runtime.build.Builder module
+=========================================
+
+.. automodule:: pip_services_runtime.build.Builder
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,7 @@
+pip_services_runtime.boot.AbstractBootConfig module
+===================================================
+
+.. automodule:: pip_services_runtime.boot.AbstractBootConfig
+    :members:
+    :undoc-members:
+    :show-inheritance:

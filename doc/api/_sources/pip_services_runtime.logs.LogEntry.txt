@@ -1,0 +1,7 @@
+pip_services_runtime.logs.LogEntry module
+=========================================
+
+.. automodule:: pip_services_runtime.logs.LogEntry
+    :members:
+    :undoc-members:
+    :show-inheritance:

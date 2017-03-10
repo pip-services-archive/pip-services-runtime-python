@@ -1,0 +1,7 @@
+pip_services_runtime.IAddon module
+==================================
+
+.. automodule:: pip_services_runtime.IAddon
+    :members:
+    :undoc-members:
+    :show-inheritance:

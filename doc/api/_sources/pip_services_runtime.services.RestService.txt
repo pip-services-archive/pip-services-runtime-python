@@ -1,0 +1,7 @@
+pip_services_runtime.services.RestService module
+================================================
+
+.. automodule:: pip_services_runtime.services.RestService
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>pip_services_runtime.config.ComponentConfig module &mdash; Pip.Services Runtime for Python API</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Pip.Services Runtime for Python API" href="index.html" />
+    <link rel="up" title="pip_services_runtime.config package" href="pip_services_runtime.config.html" />
+    <link rel="next" title="pip_services_runtime.config.ComponentDescriptor module" href="pip_services_runtime.config.ComponentDescriptor.html" />
+    <link rel="prev" title="pip_services_runtime.config.Category module" href="pip_services_runtime.config.Category.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-pip_services_runtime.config.ComponentConfig">
+<span id="pip-services-runtime-config-componentconfig-module"></span><h1>pip_services_runtime.config.ComponentConfig module<a class="headerlink" href="#module-pip_services_runtime.config.ComponentConfig" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="pip-services-runtime-config-componentconfig">
+<h2>pip_services_runtime.config.ComponentConfig<a class="headerlink" href="#pip-services-runtime-config-componentconfig" title="Permalink to this headline">¶</a></h2>
+<p>Component configuration implementation</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">copyright:</th><td class="field-body">Digital Living Software Corp. 2015-2016, see AUTHORS for more details.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">license:</th><td class="field-body">MIT, see LICENSE for more details.</td>
+</tr>
+</tbody>
+</table>
+<dl class="class">
+<dt id="pip_services_runtime.config.ComponentConfig.ComponentConfig">
+<em class="property">class </em><code class="descclassname">pip_services_runtime.config.ComponentConfig.</code><code class="descname">ComponentConfig</code><span class="sig-paren">(</span><em>category=None</em>, <em>content=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.config.ComponentConfig.ComponentConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Stores configuration for microservice component</p>
+<dl class="staticmethod">
+<dt id="pip_services_runtime.config.ComponentConfig.ComponentConfig.from_tuples">
+<em class="property">static </em><code class="descname">from_tuples</code><span class="sig-paren">(</span><em>*tuples</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.config.ComponentConfig.ComponentConfig.from_tuples" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates component configuration using hardcoded parameters.
+This method of configuration is usually used during testing.
+The configuration is created with &#8216;Undefined&#8217; category since it&#8217;s not used to create a component.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>tuples: configuration parameters as &lt;key&gt; + &lt;value&gt; tuples</dd>
+</dl>
+<p>Returns: constructed component configuration</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="pip_services_runtime.config.ComponentConfig.ComponentConfig.from_value">
+<em class="property">static </em><code class="descname">from_value</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.config.ComponentConfig.ComponentConfig.from_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates component configuration using free-form objects.
+This method of configuration is usually used during testing.
+The configuration is created with &#8216;Undefined&#8217; category since it&#8217;s not used to create a component.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>value: a free-form object</dd>
+</dl>
+<p>Returns: constructed component configuration</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.config.ComponentConfig.ComponentConfig.get_connection">
+<code class="descname">get_connection</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.config.ComponentConfig.ComponentConfig.get_connection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets connection parameters from &#8216;connection&#8217; object 
+This method is usually used by persistence components to get connections to databases.</p>
+<p>Returns: database connection parameters or None if connection is not set</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.config.ComponentConfig.ComponentConfig.get_connections">
+<code class="descname">get_connections</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.config.ComponentConfig.ComponentConfig.get_connections" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets a list of database connections from &#8216;connections&#8217; or &#8216;connection&#8217; objects.
+This method is usually used by persistence component that may connect to one of few database servers.</p>
+<p>Returns: a list with database connections</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.config.ComponentConfig.ComponentConfig.get_descriptor">
+<code class="descname">get_descriptor</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.config.ComponentConfig.ComponentConfig.get_descriptor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets component descriptor. It is read from &#8216;descriptor&#8217; object if it exists.</p>
+<p>Returns: the component descriptor</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.config.ComponentConfig.ComponentConfig.get_endpoint">
+<code class="descname">get_endpoint</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.config.ComponentConfig.ComponentConfig.get_endpoint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets a service endpoint from &#8216;endpoint&#8217; object 
+This method is usually used by services that need to bind to a single endpoint.</p>
+<p>Returns: a service endpoint or None if endpoint is not set</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.config.ComponentConfig.ComponentConfig.get_endpoints">
+<code class="descname">get_endpoints</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.config.ComponentConfig.ComponentConfig.get_endpoints" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets a list of service endpoint from &#8216;endpoints&#8217; or &#8216;endpoint&#8217; objects
+This method is usually used by clients that may connect to one of few services.</p>
+<p>Returns: a list with service endpoints</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.config.ComponentConfig.ComponentConfig.get_options">
+<code class="descname">get_options</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.config.ComponentConfig.ComponentConfig.get_options" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets component free-form configuration options.
+The options are read from &#8216;options&#8217;, &#8216;settings&#8217; or &#8216;params&#8217; objects.</p>
+<p>Returns: DynamicMap with free-form component options or &lt;b&gt;null&lt;/b&gt; when options are not set.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.config.ComponentConfig.ComponentConfig.get_raw_content">
+<code class="descname">get_raw_content</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.config.ComponentConfig.ComponentConfig.get_raw_content" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the raw content of the configuration as dynamic map
+Returns: DynamicMap with all component configuration parameters.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.config.ComponentConfig.ComponentConfig.with_default_tuples">
+<code class="descname">with_default_tuples</code><span class="sig-paren">(</span><em>*default_tuples</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.config.ComponentConfig.ComponentConfig.with_default_tuples" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets default values to the configuration</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>defaults_tuples: default configuration represented by &lt;key&gt; + &lt;value&gt; tuples</dd>
+</dl>
+<p>Returns: a reference to this configuration for chaining or passing through.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.config.ComponentConfig.ComponentConfig.with_defaults">
+<code class="descname">with_defaults</code><span class="sig-paren">(</span><em>default_content</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.config.ComponentConfig.ComponentConfig.with_defaults" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets default values to the configuration</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>default_content: DynamicMap with default configuration</dd>
+</dl>
+<p>Returns: a reference to this configuration for chaining or passing through.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">pip_services_runtime.config.ComponentConfig module</a><ul>
+<li><a class="reference internal" href="#pip-services-runtime-config-componentconfig">pip_services_runtime.config.ComponentConfig</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="pip_services_runtime.html">pip_services_runtime package</a><ul>
+  <li><a href="pip_services_runtime.config.html">pip_services_runtime.config package</a><ul>
+      <li>Previous: <a href="pip_services_runtime.config.Category.html" title="previous chapter">pip_services_runtime.config.Category module</a></li>
+      <li>Next: <a href="pip_services_runtime.config.ComponentDescriptor.html" title="next chapter">pip_services_runtime.config.ComponentDescriptor module</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/pip_services_runtime.config.ComponentConfig.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Digital Living Software Corp..
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+      |
+      <a href="_sources/pip_services_runtime.config.ComponentConfig.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

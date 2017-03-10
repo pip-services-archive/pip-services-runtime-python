@@ -1,0 +1,7 @@
+pip_services_runtime.data.DataPage module
+=========================================
+
+.. automodule:: pip_services_runtime.data.DataPage
+    :members:
+    :undoc-members:
+    :show-inheritance:

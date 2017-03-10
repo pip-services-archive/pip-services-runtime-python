@@ -1,0 +1,7 @@
+pip_services_runtime.IService module
+====================================
+
+.. automodule:: pip_services_runtime.IService
+    :members:
+    :undoc-members:
+    :show-inheritance:

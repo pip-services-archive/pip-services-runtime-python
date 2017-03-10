@@ -1,0 +1,7 @@
+pip_services_runtime.AbstractComponent module
+=============================================
+
+.. automodule:: pip_services_runtime.AbstractComponent
+    :members:
+    :undoc-members:
+    :show-inheritance:

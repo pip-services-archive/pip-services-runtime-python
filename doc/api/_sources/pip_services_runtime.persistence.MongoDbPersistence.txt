@@ -1,0 +1,7 @@
+pip_services_runtime.persistence.MongoDbPersistence module
+==========================================================
+
+.. automodule:: pip_services_runtime.persistence.MongoDbPersistence
+    :members:
+    :undoc-members:
+    :show-inheritance:

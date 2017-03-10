@@ -1,0 +1,7 @@
+pip_services_runtime.clients.RestClient module
+==============================================
+
+.. automodule:: pip_services_runtime.clients.RestClient
+    :members:
+    :undoc-members:
+    :show-inheritance:

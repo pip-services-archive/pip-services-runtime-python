@@ -1,0 +1,7 @@
+pip_services_runtime.config.ConfigReader module
+===============================================
+
+.. automodule:: pip_services_runtime.config.ConfigReader
+    :members:
+    :undoc-members:
+    :show-inheritance:

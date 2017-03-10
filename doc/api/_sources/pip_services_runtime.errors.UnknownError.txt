@@ -1,0 +1,7 @@
+pip_services_runtime.errors.UnknownError module
+===============================================
+
+.. automodule:: pip_services_runtime.errors.UnknownError
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,7 @@
+pip_services_runtime.validation.IPropertyValidationRule module
+==============================================================
+
+.. automodule:: pip_services_runtime.validation.IPropertyValidationRule
+    :members:
+    :undoc-members:
+    :show-inheritance:

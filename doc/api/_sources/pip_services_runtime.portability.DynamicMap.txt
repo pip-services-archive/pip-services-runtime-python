@@ -1,0 +1,7 @@
+pip_services_runtime.portability.DynamicMap module
+==================================================
+
+.. automodule:: pip_services_runtime.portability.DynamicMap
+    :members:
+    :undoc-members:
+    :show-inheritance:

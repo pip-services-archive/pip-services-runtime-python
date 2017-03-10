@@ -1,0 +1,7 @@
+pip_services_runtime.commands.Command module
+============================================
+
+.. automodule:: pip_services_runtime.commands.Command
+    :members:
+    :undoc-members:
+    :show-inheritance:

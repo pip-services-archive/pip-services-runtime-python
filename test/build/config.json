@@ -1,0 +1,39 @@
+{
+    "logs": { 
+        "descriptor": {
+            "type": "console"
+        } 
+    },
+    
+    "counters": {
+        "descriptor": {
+            "type": "log"
+        }
+    },
+
+    "cache": {
+        "descriptor": {
+            "type": "memory"
+        },
+        "options": {
+            "timeout": 10000
+        }
+    },
+    
+    "persistence": {
+        "descriptor": {
+            "group": "pip-services-dummies",
+            "type": "file"
+        },
+        "options": {
+            "path": "./data/dummies.json",
+            "data": [] 
+        }
+    },
+
+    "controllers": {
+        "descriptor": {
+            "group": "pip-services-dummies"
+        }
+    }
+}

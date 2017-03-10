@@ -1,0 +1,23 @@
+pip_services_runtime.config package
+===================================
+
+Submodules
+----------
+
+.. toctree::
+
+   pip_services_runtime.config.Category
+   pip_services_runtime.config.ComponentConfig
+   pip_services_runtime.config.ComponentDescriptor
+   pip_services_runtime.config.ConfigReader
+   pip_services_runtime.config.Connection
+   pip_services_runtime.config.Endpoint
+   pip_services_runtime.config.MicroserviceConfig
+
+Module contents
+---------------
+
+.. automodule:: pip_services_runtime.config
+    :members:
+    :undoc-members:
+    :show-inheritance:

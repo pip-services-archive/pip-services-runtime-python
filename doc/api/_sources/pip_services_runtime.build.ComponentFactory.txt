@@ -1,0 +1,7 @@
+pip_services_runtime.build.ComponentFactory module
+==================================================
+
+.. automodule:: pip_services_runtime.build.ComponentFactory
+    :members:
+    :undoc-members:
+    :show-inheritance:

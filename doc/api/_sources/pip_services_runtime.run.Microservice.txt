@@ -1,0 +1,7 @@
+pip_services_runtime.run.Microservice module
+============================================
+
+.. automodule:: pip_services_runtime.run.Microservice
+    :members:
+    :undoc-members:
+    :show-inheritance:

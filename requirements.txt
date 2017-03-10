@@ -1,0 +1,7 @@
+iso8601
+PyYAML
+pytest
+Sphinx
+pymongo
+bottle
+requests

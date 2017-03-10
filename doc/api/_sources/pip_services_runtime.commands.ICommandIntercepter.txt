@@ -1,0 +1,7 @@
+pip_services_runtime.commands.ICommandIntercepter module
+========================================================
+
+.. automodule:: pip_services_runtime.commands.ICommandIntercepter
+    :members:
+    :undoc-members:
+    :show-inheritance:

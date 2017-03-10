@@ -1,0 +1,449 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>pip_services_runtime.errors package &mdash; Pip.Services Runtime for Python API</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Pip.Services Runtime for Python API" href="index.html" />
+    <link rel="up" title="pip_services_runtime package" href="pip_services_runtime.html" />
+    <link rel="next" title="pip_services_runtime.errors.BadRequestError module" href="pip_services_runtime.errors.BadRequestError.html" />
+    <link rel="prev" title="pip_services_runtime.discovery.AbstractDiscovery module" href="pip_services_runtime.discovery.AbstractDiscovery.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="pip-services-runtime-errors-package">
+<h1>pip_services_runtime.errors package<a class="headerlink" href="#pip-services-runtime-errors-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.errors.BadRequestError.html">pip_services_runtime.errors.BadRequestError module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.errors.BadRequestError.html#pip-services-runtime-errors-badrequesterror">pip_services_runtime.errors.BadRequestError</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.errors.BuildError.html">pip_services_runtime.errors.BuildError module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.errors.BuildError.html#pip-services-runtime-errors-builderror">pip_services_runtime.errors.BuildError</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.errors.CallError.html">pip_services_runtime.errors.CallError module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.errors.CallError.html#pip-services-runtime-errors-callerror">pip_services_runtime.errors.CallError</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.errors.ConfigError.html">pip_services_runtime.errors.ConfigError module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.errors.ConfigError.html#pip-services-runtime-errors-configerror">pip_services_runtime.errors.ConfigError</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.errors.ConflictError.html">pip_services_runtime.errors.ConflictError module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.errors.ConflictError.html#pip-services-runtime-errors-conflicterror">pip_services_runtime.errors.ConflictError</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.errors.ConnectionError.html">pip_services_runtime.errors.ConnectionError module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.errors.ConnectionError.html#pip-services-runtime-errors-connectionerror">pip_services_runtime.errors.ConnectionError</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.errors.ErrorCategory.html">pip_services_runtime.errors.ErrorCategory module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.errors.ErrorCategory.html#pip-services-runtime-errors-errorcategory">pip_services_runtime.errors.ErrorCategory</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.errors.FileError.html">pip_services_runtime.errors.FileError module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.errors.FileError.html#pip-services-runtime-errors-fileerror">pip_services_runtime.errors.FileError</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.errors.MicroserviceError.html">pip_services_runtime.errors.MicroserviceError module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.errors.MicroserviceError.html#pip-services-runtime-errors-microserviceerror">pip_services_runtime.errors.MicroserviceError</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.errors.NotFoundError.html">pip_services_runtime.errors.NotFoundError module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.errors.NotFoundError.html#pip-services-runtime-errors-notfounderror">pip_services_runtime.errors.NotFoundError</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.errors.StateError.html">pip_services_runtime.errors.StateError module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.errors.StateError.html#pip-services-runtime-errors-stateerror">pip_services_runtime.errors.StateError</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.errors.UnauthorizedError.html">pip_services_runtime.errors.UnauthorizedError module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.errors.UnauthorizedError.html#pip-services-runtime-errors-unauthorizederror">pip_services_runtime.errors.UnauthorizedError</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.errors.UnknownError.html">pip_services_runtime.errors.UnknownError module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.errors.UnknownError.html#pip-services-runtime-errors-unknownerror">pip_services_runtime.errors.UnknownError</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.errors.UnsupportedError.html">pip_services_runtime.errors.UnsupportedError module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.errors.UnsupportedError.html#pip-services-runtime-errors-unsupportederror">pip_services_runtime.errors.UnsupportedError</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="module-pip_services_runtime.errors">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pip_services_runtime.errors" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="pip-services-runtime-errors-init">
+<h3>pip_services_runtime.errors.__init__<a class="headerlink" href="#pip-services-runtime-errors-init" title="Permalink to this headline">¶</a></h3>
+<p>Errors module initialization</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">copyright:</th><td class="field-body">Digital Living Software Corp. 2015-2016, see AUTHORS for more details.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">license:</th><td class="field-body">MIT, see LICENSE for more details.</td>
+</tr>
+</tbody>
+</table>
+<dl class="class">
+<dt id="pip_services_runtime.errors.ErrorCategory">
+<em class="property">class </em><code class="descclassname">pip_services_runtime.errors.</code><code class="descname">ErrorCategory</code><a class="headerlink" href="#pip_services_runtime.errors.ErrorCategory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Defines broad categories of microservice errors.</p>
+<dl class="attribute">
+<dt id="pip_services_runtime.errors.ErrorCategory.BadRequest">
+<code class="descname">BadRequest</code><em class="property"> = 'BadRequest'</em><a class="headerlink" href="#pip_services_runtime.errors.ErrorCategory.BadRequest" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.errors.ErrorCategory.BuildError">
+<code class="descname">BuildError</code><em class="property"> = 'BuildError'</em><a class="headerlink" href="#pip_services_runtime.errors.ErrorCategory.BuildError" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.errors.ErrorCategory.CallError">
+<code class="descname">CallError</code><em class="property"> = 'CallError'</em><a class="headerlink" href="#pip_services_runtime.errors.ErrorCategory.CallError" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.errors.ErrorCategory.ConfigError">
+<code class="descname">ConfigError</code><em class="property"> = 'ConfigError'</em><a class="headerlink" href="#pip_services_runtime.errors.ErrorCategory.ConfigError" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.errors.ErrorCategory.Conflict">
+<code class="descname">Conflict</code><em class="property"> = 'Conflict'</em><a class="headerlink" href="#pip_services_runtime.errors.ErrorCategory.Conflict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.errors.ErrorCategory.ConnectionError">
+<code class="descname">ConnectionError</code><em class="property"> = 'ConnectionError'</em><a class="headerlink" href="#pip_services_runtime.errors.ErrorCategory.ConnectionError" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.errors.ErrorCategory.FileError">
+<code class="descname">FileError</code><em class="property"> = 'FileError'</em><a class="headerlink" href="#pip_services_runtime.errors.ErrorCategory.FileError" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.errors.ErrorCategory.NotFound">
+<code class="descname">NotFound</code><em class="property"> = 'NotFound'</em><a class="headerlink" href="#pip_services_runtime.errors.ErrorCategory.NotFound" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.errors.ErrorCategory.StateError">
+<code class="descname">StateError</code><em class="property"> = 'StateError'</em><a class="headerlink" href="#pip_services_runtime.errors.ErrorCategory.StateError" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.errors.ErrorCategory.Unauthorized">
+<code class="descname">Unauthorized</code><em class="property"> = 'Unauthorized'</em><a class="headerlink" href="#pip_services_runtime.errors.ErrorCategory.Unauthorized" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.errors.ErrorCategory.UnknownError">
+<code class="descname">UnknownError</code><em class="property"> = 'UnknownError'</em><a class="headerlink" href="#pip_services_runtime.errors.ErrorCategory.UnknownError" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.errors.ErrorCategory.Unsupported">
+<code class="descname">Unsupported</code><em class="property"> = 'Unsupported'</em><a class="headerlink" href="#pip_services_runtime.errors.ErrorCategory.Unsupported" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="exception">
+<dt id="pip_services_runtime.errors.MicroserviceError">
+<em class="property">exception </em><code class="descclassname">pip_services_runtime.errors.</code><code class="descname">MicroserviceError</code><span class="sig-paren">(</span><em>category='UnknownError'</em>, <em>component=None</em>, <em>code='Undefined'</em>, <em>message='Unknown error'</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.errors.MicroserviceError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">exceptions.Exception</span></code></p>
+<p>Base class for all errors thrown by microservice implementation</p>
+<dl class="attribute">
+<dt id="pip_services_runtime.errors.MicroserviceError.category">
+<code class="descname">category</code><em class="property"> = 'UnknownError'</em><a class="headerlink" href="#pip_services_runtime.errors.MicroserviceError.category" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.errors.MicroserviceError.cause">
+<code class="descname">cause</code><em class="property"> = None</em><a class="headerlink" href="#pip_services_runtime.errors.MicroserviceError.cause" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.errors.MicroserviceError.code">
+<code class="descname">code</code><em class="property"> = 'Undefined'</em><a class="headerlink" href="#pip_services_runtime.errors.MicroserviceError.code" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.errors.MicroserviceError.component">
+<code class="descname">component</code><em class="property"> = None</em><a class="headerlink" href="#pip_services_runtime.errors.MicroserviceError.component" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.errors.MicroserviceError.correlation_id">
+<code class="descname">correlation_id</code><em class="property"> = None</em><a class="headerlink" href="#pip_services_runtime.errors.MicroserviceError.correlation_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.errors.MicroserviceError.details">
+<code class="descname">details</code><em class="property"> = None</em><a class="headerlink" href="#pip_services_runtime.errors.MicroserviceError.details" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.errors.MicroserviceError.for_component">
+<code class="descname">for_component</code><span class="sig-paren">(</span><em>component</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.errors.MicroserviceError.for_component" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="staticmethod">
+<dt id="pip_services_runtime.errors.MicroserviceError.from_value">
+<em class="property">static </em><code class="descname">from_value</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.errors.MicroserviceError.from_value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.errors.MicroserviceError.stack">
+<code class="descname">stack</code><em class="property"> = None</em><a class="headerlink" href="#pip_services_runtime.errors.MicroserviceError.stack" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.errors.MicroserviceError.status">
+<code class="descname">status</code><em class="property"> = 500</em><a class="headerlink" href="#pip_services_runtime.errors.MicroserviceError.status" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.errors.MicroserviceError.to_json">
+<code class="descname">to_json</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.errors.MicroserviceError.to_json" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.errors.MicroserviceError.with_cause">
+<code class="descname">with_cause</code><span class="sig-paren">(</span><em>cause</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.errors.MicroserviceError.with_cause" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.errors.MicroserviceError.with_code">
+<code class="descname">with_code</code><span class="sig-paren">(</span><em>code</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.errors.MicroserviceError.with_code" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.errors.MicroserviceError.with_correlation_id">
+<code class="descname">with_correlation_id</code><span class="sig-paren">(</span><em>correlation_id</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.errors.MicroserviceError.with_correlation_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.errors.MicroserviceError.with_details">
+<code class="descname">with_details</code><span class="sig-paren">(</span><em>*details</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.errors.MicroserviceError.with_details" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.errors.MicroserviceError.with_stack">
+<code class="descname">with_stack</code><span class="sig-paren">(</span><em>stack</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.errors.MicroserviceError.with_stack" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.errors.MicroserviceError.with_status">
+<code class="descname">with_status</code><span class="sig-paren">(</span><em>status</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.errors.MicroserviceError.with_status" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.errors.MicroserviceError.wrap">
+<code class="descname">wrap</code><span class="sig-paren">(</span><em>cause</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.errors.MicroserviceError.wrap" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="staticmethod">
+<dt id="pip_services_runtime.errors.MicroserviceError.wrap_error">
+<em class="property">static </em><code class="descname">wrap_error</code><span class="sig-paren">(</span><em>error</em>, <em>cause</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.errors.MicroserviceError.wrap_error" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="exception">
+<dt id="pip_services_runtime.errors.BadRequestError">
+<em class="property">exception </em><code class="descclassname">pip_services_runtime.errors.</code><code class="descname">BadRequestError</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.errors.BadRequestError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pip_services_runtime.errors.MicroserviceError.html#pip_services_runtime.errors.MicroserviceError.MicroserviceError" title="pip_services_runtime.errors.MicroserviceError.MicroserviceError"><code class="xref py py-class docutils literal"><span class="pre">pip_services_runtime.errors.MicroserviceError.MicroserviceError</span></code></a></p>
+<p>Errors due to improper user requests, like missing or wrong parameters</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="pip_services_runtime.errors.BuildError">
+<em class="property">exception </em><code class="descclassname">pip_services_runtime.errors.</code><code class="descname">BuildError</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.errors.BuildError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pip_services_runtime.errors.MicroserviceError.html#pip_services_runtime.errors.MicroserviceError.MicroserviceError" title="pip_services_runtime.errors.MicroserviceError.MicroserviceError"><code class="xref py py-class docutils literal"><span class="pre">pip_services_runtime.errors.MicroserviceError.MicroserviceError</span></code></a></p>
+<p>Errors happened during microservice build process and caused by problems in component factories</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="pip_services_runtime.errors.CallError">
+<em class="property">exception </em><code class="descclassname">pip_services_runtime.errors.</code><code class="descname">CallError</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.errors.CallError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pip_services_runtime.errors.MicroserviceError.html#pip_services_runtime.errors.MicroserviceError.MicroserviceError" title="pip_services_runtime.errors.MicroserviceError.MicroserviceError"><code class="xref py py-class docutils literal"><span class="pre">pip_services_runtime.errors.MicroserviceError.MicroserviceError</span></code></a></p>
+<p>Errors returned by remote services or network during call attempts</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="pip_services_runtime.errors.ConfigError">
+<em class="property">exception </em><code class="descclassname">pip_services_runtime.errors.</code><code class="descname">ConfigError</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.errors.ConfigError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pip_services_runtime.errors.MicroserviceError.html#pip_services_runtime.errors.MicroserviceError.MicroserviceError" title="pip_services_runtime.errors.MicroserviceError.MicroserviceError"><code class="xref py py-class docutils literal"><span class="pre">pip_services_runtime.errors.MicroserviceError.MicroserviceError</span></code></a></p>
+<p>Errors related to mistakes in microservice user-defined configuration</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="pip_services_runtime.errors.ConflictError">
+<em class="property">exception </em><code class="descclassname">pip_services_runtime.errors.</code><code class="descname">ConflictError</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.errors.ConflictError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pip_services_runtime.errors.MicroserviceError.html#pip_services_runtime.errors.MicroserviceError.MicroserviceError" title="pip_services_runtime.errors.MicroserviceError.MicroserviceError"><code class="xref py py-class docutils literal"><span class="pre">pip_services_runtime.errors.MicroserviceError.MicroserviceError</span></code></a></p>
+<p>Errors raised by conflict in object versions posted by user and stored on server.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="pip_services_runtime.errors.ConnectionError">
+<em class="property">exception </em><code class="descclassname">pip_services_runtime.errors.</code><code class="descname">ConnectionError</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.errors.ConnectionError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pip_services_runtime.errors.MicroserviceError.html#pip_services_runtime.errors.MicroserviceError.MicroserviceError" title="pip_services_runtime.errors.MicroserviceError.MicroserviceError"><code class="xref py py-class docutils literal"><span class="pre">pip_services_runtime.errors.MicroserviceError.MicroserviceError</span></code></a></p>
+<p>Errors happened during connection to remote services.
+They can be related to misconfiguration, network issues
+or remote service itself</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="pip_services_runtime.errors.FileError">
+<em class="property">exception </em><code class="descclassname">pip_services_runtime.errors.</code><code class="descname">FileError</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.errors.FileError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pip_services_runtime.errors.MicroserviceError.html#pip_services_runtime.errors.MicroserviceError.MicroserviceError" title="pip_services_runtime.errors.MicroserviceError.MicroserviceError"><code class="xref py py-class docutils literal"><span class="pre">pip_services_runtime.errors.MicroserviceError.MicroserviceError</span></code></a></p>
+<p>Errors in read/write file operations</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="pip_services_runtime.errors.NotFoundError">
+<em class="property">exception </em><code class="descclassname">pip_services_runtime.errors.</code><code class="descname">NotFoundError</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.errors.NotFoundError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pip_services_runtime.errors.MicroserviceError.html#pip_services_runtime.errors.MicroserviceError.MicroserviceError" title="pip_services_runtime.errors.MicroserviceError.MicroserviceError"><code class="xref py py-class docutils literal"><span class="pre">pip_services_runtime.errors.MicroserviceError.MicroserviceError</span></code></a></p>
+<p>Error caused by attempt to access missing object</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="pip_services_runtime.errors.StateError">
+<em class="property">exception </em><code class="descclassname">pip_services_runtime.errors.</code><code class="descname">StateError</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.errors.StateError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pip_services_runtime.errors.MicroserviceError.html#pip_services_runtime.errors.MicroserviceError.MicroserviceError" title="pip_services_runtime.errors.MicroserviceError.MicroserviceError"><code class="xref py py-class docutils literal"><span class="pre">pip_services_runtime.errors.MicroserviceError.MicroserviceError</span></code></a></p>
+<p>Errors related to operations called in wrong component state.
+For instance, business calls when component is not ready</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="pip_services_runtime.errors.UnauthorizedError">
+<em class="property">exception </em><code class="descclassname">pip_services_runtime.errors.</code><code class="descname">UnauthorizedError</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.errors.UnauthorizedError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pip_services_runtime.errors.MicroserviceError.html#pip_services_runtime.errors.MicroserviceError.MicroserviceError" title="pip_services_runtime.errors.MicroserviceError.MicroserviceError"><code class="xref py py-class docutils literal"><span class="pre">pip_services_runtime.errors.MicroserviceError.MicroserviceError</span></code></a></p>
+<p>Access errors caused by missing user identity or security permissions</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="pip_services_runtime.errors.UnsupportedError">
+<em class="property">exception </em><code class="descclassname">pip_services_runtime.errors.</code><code class="descname">UnsupportedError</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.errors.UnsupportedError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pip_services_runtime.errors.MicroserviceError.html#pip_services_runtime.errors.MicroserviceError.MicroserviceError" title="pip_services_runtime.errors.MicroserviceError.MicroserviceError"><code class="xref py py-class docutils literal"><span class="pre">pip_services_runtime.errors.MicroserviceError.MicroserviceError</span></code></a></p>
+<p>Errors caused by calls to unsupported or not yet implemented functionality</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="pip_services_runtime.errors.UnknownError">
+<em class="property">exception </em><code class="descclassname">pip_services_runtime.errors.</code><code class="descname">UnknownError</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.errors.UnknownError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pip_services_runtime.errors.MicroserviceError.html#pip_services_runtime.errors.MicroserviceError.MicroserviceError" title="pip_services_runtime.errors.MicroserviceError.MicroserviceError"><code class="xref py py-class docutils literal"><span class="pre">pip_services_runtime.errors.MicroserviceError.MicroserviceError</span></code></a></p>
+<p>Internal errors caused by programming or unexpected errors</p>
+</dd></dl>
+
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">pip_services_runtime.errors package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-pip_services_runtime.errors">Module contents</a><ul>
+<li><a class="reference internal" href="#pip-services-runtime-errors-init">pip_services_runtime.errors.__init__</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="pip_services_runtime.html">pip_services_runtime package</a><ul>
+      <li>Previous: <a href="pip_services_runtime.discovery.AbstractDiscovery.html" title="previous chapter">pip_services_runtime.discovery.AbstractDiscovery module</a></li>
+      <li>Next: <a href="pip_services_runtime.errors.BadRequestError.html" title="next chapter">pip_services_runtime.errors.BadRequestError module</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/pip_services_runtime.errors.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Digital Living Software Corp..
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+      |
+      <a href="_sources/pip_services_runtime.errors.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

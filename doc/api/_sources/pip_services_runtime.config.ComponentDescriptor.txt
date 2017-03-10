@@ -1,0 +1,7 @@
+pip_services_runtime.config.ComponentDescriptor module
+======================================================
+
+.. automodule:: pip_services_runtime.config.ComponentDescriptor
+    :members:
+    :undoc-members:
+    :show-inheritance:

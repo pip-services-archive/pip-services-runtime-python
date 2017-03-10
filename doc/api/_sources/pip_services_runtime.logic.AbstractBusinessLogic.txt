@@ -1,0 +1,7 @@
+pip_services_runtime.logic.AbstractBusinessLogic module
+=======================================================
+
+.. automodule:: pip_services_runtime.logic.AbstractBusinessLogic
+    :members:
+    :undoc-members:
+    :show-inheritance:

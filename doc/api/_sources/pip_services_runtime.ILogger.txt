@@ -1,0 +1,7 @@
+pip_services_runtime.ILogger module
+===================================
+
+.. automodule:: pip_services_runtime.ILogger
+    :members:
+    :undoc-members:
+    :show-inheritance:

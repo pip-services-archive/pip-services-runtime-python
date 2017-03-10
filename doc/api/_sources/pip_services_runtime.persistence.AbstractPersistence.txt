@@ -1,0 +1,7 @@
+pip_services_runtime.persistence.AbstractPersistence module
+===========================================================
+
+.. automodule:: pip_services_runtime.persistence.AbstractPersistence
+    :members:
+    :undoc-members:
+    :show-inheritance:

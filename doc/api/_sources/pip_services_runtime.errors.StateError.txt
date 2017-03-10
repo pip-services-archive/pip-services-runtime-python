@@ -1,0 +1,7 @@
+pip_services_runtime.errors.StateError module
+=============================================
+
+.. automodule:: pip_services_runtime.errors.StateError
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,7 @@
+pip_services_runtime.addons.AbstractAddon module
+================================================
+
+.. automodule:: pip_services_runtime.addons.AbstractAddon
+    :members:
+    :undoc-members:
+    :show-inheritance:

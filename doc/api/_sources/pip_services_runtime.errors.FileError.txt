@@ -1,0 +1,7 @@
+pip_services_runtime.errors.FileError module
+============================================
+
+.. automodule:: pip_services_runtime.errors.FileError
+    :members:
+    :undoc-members:
+    :show-inheritance:

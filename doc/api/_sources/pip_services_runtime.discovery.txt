@@ -1,0 +1,17 @@
+pip_services_runtime.discovery package
+======================================
+
+Submodules
+----------
+
+.. toctree::
+
+   pip_services_runtime.discovery.AbstractDiscovery
+
+Module contents
+---------------
+
+.. automodule:: pip_services_runtime.discovery
+    :members:
+    :undoc-members:
+    :show-inheritance:

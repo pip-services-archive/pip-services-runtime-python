@@ -1,0 +1,7 @@
+pip_services_runtime.errors.ErrorCategory module
+================================================
+
+.. automodule:: pip_services_runtime.errors.ErrorCategory
+    :members:
+    :undoc-members:
+    :show-inheritance:

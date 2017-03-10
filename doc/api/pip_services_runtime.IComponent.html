@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>pip_services_runtime.IComponent module &mdash; Pip.Services Runtime for Python API</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Pip.Services Runtime for Python API" href="index.html" />
+    <link rel="up" title="pip_services_runtime package" href="pip_services_runtime.html" />
+    <link rel="next" title="pip_services_runtime.IComponentFactory module" href="pip_services_runtime.IComponentFactory.html" />
+    <link rel="prev" title="pip_services_runtime.IClient module" href="pip_services_runtime.IClient.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-pip_services_runtime.IComponent">
+<span id="pip-services-runtime-icomponent-module"></span><h1>pip_services_runtime.IComponent module<a class="headerlink" href="#module-pip_services_runtime.IComponent" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="pip-services-runtime-icomponent">
+<h2>pip_services_runtime.IComponent<a class="headerlink" href="#pip-services-runtime-icomponent" title="Permalink to this headline">¶</a></h2>
+<p>Interface for microservice component that defines component lifecycle.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">copyright:</th><td class="field-body">Digital Living Software Corp. 2015-2016, see AUTHORS for more details.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">license:</th><td class="field-body">MIT, see LICENSE for more details.</td>
+</tr>
+</tbody>
+</table>
+<dl class="class">
+<dt id="pip_services_runtime.IComponent.IComponent">
+<em class="property">class </em><code class="descclassname">pip_services_runtime.IComponent.</code><code class="descname">IComponent</code><a class="headerlink" href="#pip_services_runtime.IComponent.IComponent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>The most basic interface that identifies microservice component
+and it&#8217;s behavior. It exposes unique component descriptor for 
+<a href="#id1"><span class="problematic" id="id2">`</span></a>identification and allows to manage the component lifecycle to
+transition between several states:
+- Create - creates a new component instance
+- Configure - sets component configuration parameters
+- Link - sets references to other microservice components
+- Open - performs initialization, opens connections and makes the component ready
+- Close - closes connections, deinitializes component.</p>
+<dl class="method">
+<dt id="pip_services_runtime.IComponent.IComponent.close">
+<code class="descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.IComponent.IComponent.close" title="Permalink to this definition">¶</a></dt>
+<dd><p>Closes the component and all open connections, performs deinitialization
+steps. Closure can only be done from opened state. Attempts to close
+already closed component or in wrong order will cause exception.</p>
+<p>Returns: None</p>
+<dl class="docutils">
+<dt>Raises:</dt>
+<dd>MicroserviceError: when closure fails.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.IComponent.IComponent.configure">
+<code class="descname">configure</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.IComponent.IComponent.configure" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets component configuration parameters and switches component
+to &#8216;Configured&#8217; state. The configuration is only allowed once
+right after creation. Attempts to perform reconfiguration will 
+cause an exception.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>config: ComponentConfig with component configuration parameters.</dd>
+</dl>
+<p>Returns: None</p>
+<dl class="docutils">
+<dt>Raise:</dt>
+<dd>MicroserviceError: when component is in illegal state or configuration validation fails.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.IComponent.IComponent.get_descriptor">
+<code class="descname">get_descriptor</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.IComponent.IComponent.get_descriptor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the unique component descriptor that can identify
+and locate the component inside the microservice.</p>
+<p>Returns: ComponentDescriptor the unique component descriptor.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.IComponent.IComponent.get_state">
+<code class="descname">get_state</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.IComponent.IComponent.get_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the current state of the component.</p>
+<p>Returns: the current component State.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.IComponent.IComponent.link">
+<code class="descname">link</code><span class="sig-paren">(</span><em>components</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.IComponent.IComponent.link" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets references to other microservice components to enable their 
+collaboration. It is recommended to locate necessary components
+and cache their references to void performance hit during
+normal operations. 
+Linking can only be performed once after configuration 
+and will cause an exception when it is called second time 
+or out of order.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>components: ComponentSet with references to microservice components.</dd>
+</dl>
+<p>Returns: None</p>
+<dl class="docutils">
+<dt>Raises:</dt>
+<dd>MicroserviceError: when requires components are not found.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.IComponent.IComponent.open">
+<code class="descname">open</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.IComponent.IComponent.open" title="Permalink to this definition">¶</a></dt>
+<dd><p>Opens the component, performs initialization, opens connections
+to external services and makes the component ready for operations.
+Opening can be done multiple times: right after linking 
+or reopening after closure.</p>
+<p>Returns: None</p>
+<dl class="docutils">
+<dt>Raises:</dt>
+<dd>MicroserviceError: when initialization or connections fail.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">pip_services_runtime.IComponent module</a><ul>
+<li><a class="reference internal" href="#pip-services-runtime-icomponent">pip_services_runtime.IComponent</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="pip_services_runtime.html">pip_services_runtime package</a><ul>
+      <li>Previous: <a href="pip_services_runtime.IClient.html" title="previous chapter">pip_services_runtime.IClient module</a></li>
+      <li>Next: <a href="pip_services_runtime.IComponentFactory.html" title="next chapter">pip_services_runtime.IComponentFactory module</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/pip_services_runtime.IComponent.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Digital Living Software Corp..
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+      |
+      <a href="_sources/pip_services_runtime.IComponent.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

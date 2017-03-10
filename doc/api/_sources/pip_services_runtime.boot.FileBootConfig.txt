@@ -1,0 +1,7 @@
+pip_services_runtime.boot.FileBootConfig module
+===============================================
+
+.. automodule:: pip_services_runtime.boot.FileBootConfig
+    :members:
+    :undoc-members:
+    :show-inheritance:

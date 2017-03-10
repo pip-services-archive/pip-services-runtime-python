@@ -1,0 +1,59 @@
+pip_services_runtime package
+============================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    pip_services_runtime.addons
+    pip_services_runtime.boot
+    pip_services_runtime.build
+    pip_services_runtime.cache
+    pip_services_runtime.clients
+    pip_services_runtime.commands
+    pip_services_runtime.config
+    pip_services_runtime.counters
+    pip_services_runtime.data
+    pip_services_runtime.discovery
+    pip_services_runtime.errors
+    pip_services_runtime.logic
+    pip_services_runtime.logs
+    pip_services_runtime.persistence
+    pip_services_runtime.portability
+    pip_services_runtime.run
+    pip_services_runtime.services
+    pip_services_runtime.validation
+
+Submodules
+----------
+
+.. toctree::
+
+   pip_services_runtime.AbstractComponent
+   pip_services_runtime.ComponentSet
+   pip_services_runtime.IAddon
+   pip_services_runtime.IBootConfig
+   pip_services_runtime.IBusinessLogic
+   pip_services_runtime.ICache
+   pip_services_runtime.IClient
+   pip_services_runtime.IComponent
+   pip_services_runtime.IComponentFactory
+   pip_services_runtime.IController
+   pip_services_runtime.ICounters
+   pip_services_runtime.IDecorator
+   pip_services_runtime.IDiscovery
+   pip_services_runtime.ILogger
+   pip_services_runtime.IPersistence
+   pip_services_runtime.IService
+   pip_services_runtime.ITiming
+   pip_services_runtime.LogLevel
+   pip_services_runtime.State
+
+Module contents
+---------------
+
+.. automodule:: pip_services_runtime
+    :members:
+    :undoc-members:
+    :show-inheritance:

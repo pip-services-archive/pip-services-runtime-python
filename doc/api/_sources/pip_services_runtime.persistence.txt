@@ -1,0 +1,20 @@
+pip_services_runtime.persistence package
+========================================
+
+Submodules
+----------
+
+.. toctree::
+
+   pip_services_runtime.persistence.AbstractPersistence
+   pip_services_runtime.persistence.FilePersistence
+   pip_services_runtime.persistence.MemoryPersistence
+   pip_services_runtime.persistence.MongoDbPersistence
+
+Module contents
+---------------
+
+.. automodule:: pip_services_runtime.persistence
+    :members:
+    :undoc-members:
+    :show-inheritance:

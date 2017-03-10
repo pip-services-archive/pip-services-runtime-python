@@ -1,0 +1,7 @@
+pip_services_runtime.errors.UnauthorizedError module
+====================================================
+
+.. automodule:: pip_services_runtime.errors.UnauthorizedError
+    :members:
+    :undoc-members:
+    :show-inheritance:

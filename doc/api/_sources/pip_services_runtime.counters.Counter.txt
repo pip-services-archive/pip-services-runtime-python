@@ -1,0 +1,7 @@
+pip_services_runtime.counters.Counter module
+============================================
+
+.. automodule:: pip_services_runtime.counters.Counter
+    :members:
+    :undoc-members:
+    :show-inheritance:

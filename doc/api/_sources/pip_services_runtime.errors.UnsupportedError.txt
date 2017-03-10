@@ -1,0 +1,7 @@
+pip_services_runtime.errors.UnsupportedError module
+===================================================
+
+.. automodule:: pip_services_runtime.errors.UnsupportedError
+    :members:
+    :undoc-members:
+    :show-inheritance:

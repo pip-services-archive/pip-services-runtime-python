@@ -1,0 +1,7 @@
+pip_services_runtime.ComponentSet module
+========================================
+
+.. automodule:: pip_services_runtime.ComponentSet
+    :members:
+    :undoc-members:
+    :show-inheritance:

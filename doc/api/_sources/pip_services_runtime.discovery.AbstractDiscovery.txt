@@ -1,0 +1,7 @@
+pip_services_runtime.discovery.AbstractDiscovery module
+=======================================================
+
+.. automodule:: pip_services_runtime.discovery.AbstractDiscovery
+    :members:
+    :undoc-members:
+    :show-inheritance:

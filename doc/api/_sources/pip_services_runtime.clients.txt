@@ -1,0 +1,19 @@
+pip_services_runtime.clients package
+====================================
+
+Submodules
+----------
+
+.. toctree::
+
+   pip_services_runtime.clients.AbstractClient
+   pip_services_runtime.clients.DirectClient
+   pip_services_runtime.clients.RestClient
+
+Module contents
+---------------
+
+.. automodule:: pip_services_runtime.clients
+    :members:
+    :undoc-members:
+    :show-inheritance:

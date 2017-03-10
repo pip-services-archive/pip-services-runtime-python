@@ -1,0 +1,7 @@
+pip_services_runtime.counters.Timing module
+===========================================
+
+.. automodule:: pip_services_runtime.counters.Timing
+    :members:
+    :undoc-members:
+    :show-inheritance:

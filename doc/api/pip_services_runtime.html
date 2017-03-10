@@ -1,0 +1,1786 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>pip_services_runtime package &mdash; Pip.Services Runtime for Python API</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Pip.Services Runtime for Python API" href="index.html" />
+    <link rel="next" title="pip_services_runtime.addons package" href="pip_services_runtime.addons.html" />
+    <link rel="prev" title="pip_services_runtime" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="pip-services-runtime-package">
+<h1>pip_services_runtime package<a class="headerlink" href="#pip-services-runtime-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.addons.html">pip_services_runtime.addons package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.addons.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.addons.AbstractAddon.html">pip_services_runtime.addons.AbstractAddon module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.addons.AbstractAddon.html#pip-services-runtime-addons-abstractaddon">pip_services_runtime.addons.AbstractAddon</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.addons.html#module-pip_services_runtime.addons">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.addons.html#pip-services-runtime-addons-init">pip_services_runtime.addons.__init__</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.boot.html">pip_services_runtime.boot package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.boot.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.boot.AbstractBootConfig.html">pip_services_runtime.boot.AbstractBootConfig module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.boot.AbstractBootConfig.html#pip-services-runtime-boot-abstractbootconfig">pip_services_runtime.boot.AbstractBootConfig</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.boot.FileBootConfig.html">pip_services_runtime.boot.FileBootConfig module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.boot.FileBootConfig.html#pip-services-runtime-boot-filebootconfig">pip_services_runtime.boot.FileBootConfig</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.boot.html#module-pip_services_runtime.boot">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.boot.html#pip-services-runtime-boot-init">pip_services_runtime.boot.__init__</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.build.html">pip_services_runtime.build package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.build.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.build.Builder.html">pip_services_runtime.build.Builder module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.build.Builder.html#pip-services-runtime-build-builder">pip_services_runtime.build.Builder</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.build.ComponentFactory.html">pip_services_runtime.build.ComponentFactory module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.build.ComponentFactory.html#pip-services-runtime-build-componentfactory">pip_services_runtime.build.ComponentFactory</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.build.DefaultFactory.html">pip_services_runtime.build.DefaultFactory module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.build.DefaultFactory.html#pip-services-runtime-build-defaultfactory">pip_services_runtime.build.DefaultFactory</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.build.FactoryRegistration.html">pip_services_runtime.build.FactoryRegistration module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.build.FactoryRegistration.html#pip-services-runtime-build-factoryregistration">pip_services_runtime.build.FactoryRegistration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.build.html#module-pip_services_runtime.build">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.build.html#pip-services-runtime-build-init">pip_services_runtime.build.__init__</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.cache.html">pip_services_runtime.cache package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.cache.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.cache.AbstractCache.html">pip_services_runtime.cache.AbstractCache module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.cache.AbstractCache.html#pip-services-runtime-cache-abstractcache">pip_services_runtime.cache.AbstractCache</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.cache.CacheEntry.html">pip_services_runtime.cache.CacheEntry module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.cache.CacheEntry.html#pip-services-runtime-cache-cacheentry">pip_services_runtime.cache.CacheEntry</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.cache.MemoryCache.html">pip_services_runtime.cache.MemoryCache module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.cache.MemoryCache.html#pip-services-runtime-logs-memorycache">pip_services_runtime.logs.MemoryCache</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.cache.NullCache.html">pip_services_runtime.cache.NullCache module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.cache.NullCache.html#pip-services-runtime-boot-nullcache">pip_services_runtime.boot.NullCache</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.cache.html#module-pip_services_runtime.cache">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.cache.html#pip-services-runtime-cache-init">pip_services_runtime.cache.__init__</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.clients.html">pip_services_runtime.clients package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.clients.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.clients.AbstractClient.html">pip_services_runtime.clients.AbstractClient module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.clients.AbstractClient.html#pip-services-runtime-clients-abstractclient">pip_services_runtime.clients.AbstractClient</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.clients.DirectClient.html">pip_services_runtime.clients.DirectClient module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.clients.DirectClient.html#pip-services-runtime-clients-directclient">pip_services_runtime.clients.DirectClient</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.clients.RestClient.html">pip_services_runtime.clients.RestClient module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.clients.RestClient.html#pip-services-runtime-clients-restclient">pip_services_runtime.clients.RestClient</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.clients.html#module-pip_services_runtime.clients">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.clients.html#pip-services-runtime-clients-init">pip_services_runtime.clients.__init__</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.commands.html">pip_services_runtime.commands package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.commands.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.commands.Command.html">pip_services_runtime.commands.Command module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.commands.Command.html#pip-services-runtime-commands-command">pip_services_runtime.commands.Command</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.commands.CommandSet.html">pip_services_runtime.commands.CommandSet module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.commands.CommandSet.html#pip-services-runtime-commands-commandset">pip_services_runtime.commands.CommandSet</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.commands.ICommand.html">pip_services_runtime.commands.ICommand module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.commands.ICommand.html#pip-services-runtime-commands-icommand">pip_services_runtime.commands.ICommand</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.commands.ICommandIntercepter.html">pip_services_runtime.commands.ICommandIntercepter module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.commands.ICommandIntercepter.html#pip-services-runtime-commands-icommandintercepter">pip_services_runtime.commands.ICommandIntercepter</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.commands.InterceptedCommand.html">pip_services_runtime.commands.InterceptedCommand module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.commands.InterceptedCommand.html#pip-services-runtime-commands-interceptedcommand">pip_services_runtime.commands.InterceptedCommand</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.commands.TimingIntercepter.html">pip_services_runtime.commands.TimingIntercepter module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.commands.TimingIntercepter.html#pip-services-runtime-commands-timingintercepter">pip_services_runtime.commands.TimingIntercepter</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.commands.TracingIntercepter.html">pip_services_runtime.commands.TracingIntercepter module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.commands.TracingIntercepter.html#pip-services-runtime-commands-tracingintercepter">pip_services_runtime.commands.TracingIntercepter</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.commands.html#module-pip_services_runtime.commands">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.commands.html#pip-services-runtime-commands-init">pip_services_runtime.commands.__init__</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.config.html">pip_services_runtime.config package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.config.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.config.Category.html">pip_services_runtime.config.Category module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.config.Category.html#pip-services-runtime-config-category">pip_services_runtime.config.Category</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.config.ComponentConfig.html">pip_services_runtime.config.ComponentConfig module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.config.ComponentConfig.html#pip-services-runtime-config-componentconfig">pip_services_runtime.config.ComponentConfig</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.config.ComponentDescriptor.html">pip_services_runtime.config.ComponentDescriptor module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.config.ComponentDescriptor.html#pip-services-runtime-config-componentdescriptor">pip_services_runtime.config.ComponentDescriptor</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.config.ConfigReader.html">pip_services_runtime.config.ConfigReader module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.config.ConfigReader.html#pip-services-runtime-config-configreader">pip_services_runtime.config.ConfigReader</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.config.Connection.html">pip_services_runtime.config.Connection module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.config.Connection.html#pip-services-runtime-config-connection">pip_services_runtime.config.Connection</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.config.Endpoint.html">pip_services_runtime.config.Endpoint module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.config.Endpoint.html#pip-services-runtime-config-endpoint">pip_services_runtime.config.Endpoint</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.config.MicroserviceConfig.html">pip_services_runtime.config.MicroserviceConfig module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.config.MicroserviceConfig.html#pip-services-runtime-config-microserviceconfig">pip_services_runtime.config.MicroserviceConfig</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.config.html#module-pip_services_runtime.config">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.config.html#pip-services-runtime-config-init">pip_services_runtime.config.__init__</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.counters.html">pip_services_runtime.counters package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.counters.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.counters.AbstractCounters.html">pip_services_runtime.counters.AbstractCounters module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.counters.AbstractCounters.html#pip-services-runtime-counters-abstractcounters">pip_services_runtime.counters.AbstractCounters</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.counters.Counter.html">pip_services_runtime.counters.Counter module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.counters.Counter.html#pip-services-runtime-counters-counter">pip_services_runtime.counters.Counter</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.counters.CounterType.html">pip_services_runtime.counters.CounterType module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.counters.CounterType.html#pip-services-runtime-counters-countertype">pip_services_runtime.counters.CounterType</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.counters.LogCounters.html">pip_services_runtime.counters.LogCounters module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.counters.LogCounters.html#pip-services-runtime-counters-logcounters">pip_services_runtime.counters.LogCounters</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.counters.NullCounters.html">pip_services_runtime.counters.NullCounters module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.counters.NullCounters.html#pip-services-runtime-counters-nullcounters">pip_services_runtime.counters.NullCounters</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.counters.Timing.html">pip_services_runtime.counters.Timing module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.counters.Timing.html#pip-services-runtime-counters-timing">pip_services_runtime.counters.Timing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.counters.html#module-pip_services_runtime.counters">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.counters.html#pip-services-runtime-counters-init">pip_services_runtime.counters.__init__</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.data.html">pip_services_runtime.data package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.data.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.data.DataPage.html">pip_services_runtime.data.DataPage module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.data.DataPage.html#pip-services-runtime-data-datapage">pip_services_runtime.data.DataPage</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.data.FilterParams.html">pip_services_runtime.data.FilterParams module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.data.FilterParams.html#pip-services-runtime-data-filterparams">pip_services_runtime.data.FilterParams</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.data.IdGenerator.html">pip_services_runtime.data.IdGenerator module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.data.IdGenerator.html#pip-services-runtime-data-idgenerator">pip_services_runtime.data.IdGenerator</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.data.PagingParams.html">pip_services_runtime.data.PagingParams module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.data.PagingParams.html#pip-services-runtime-data-pagingparams">pip_services_runtime.data.PagingParams</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.data.html#module-pip_services_runtime.data">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.data.html#pip-services-runtime-data-init">pip_services_runtime.data.__init__</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.discovery.html">pip_services_runtime.discovery package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.discovery.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.discovery.AbstractDiscovery.html">pip_services_runtime.discovery.AbstractDiscovery module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.discovery.AbstractDiscovery.html#pip-services-runtime-discovery-abstractdiscovery">pip_services_runtime.discovery.AbstractDiscovery</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.discovery.html#module-pip_services_runtime.discovery">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.discovery.html#pip-services-runtime-discovery-init">pip_services_runtime.discovery.__init__</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.errors.html">pip_services_runtime.errors package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.errors.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.errors.BadRequestError.html">pip_services_runtime.errors.BadRequestError module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.errors.BadRequestError.html#pip-services-runtime-errors-badrequesterror">pip_services_runtime.errors.BadRequestError</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.errors.BuildError.html">pip_services_runtime.errors.BuildError module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.errors.BuildError.html#pip-services-runtime-errors-builderror">pip_services_runtime.errors.BuildError</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.errors.CallError.html">pip_services_runtime.errors.CallError module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.errors.CallError.html#pip-services-runtime-errors-callerror">pip_services_runtime.errors.CallError</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.errors.ConfigError.html">pip_services_runtime.errors.ConfigError module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.errors.ConfigError.html#pip-services-runtime-errors-configerror">pip_services_runtime.errors.ConfigError</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.errors.ConflictError.html">pip_services_runtime.errors.ConflictError module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.errors.ConflictError.html#pip-services-runtime-errors-conflicterror">pip_services_runtime.errors.ConflictError</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.errors.ConnectionError.html">pip_services_runtime.errors.ConnectionError module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.errors.ConnectionError.html#pip-services-runtime-errors-connectionerror">pip_services_runtime.errors.ConnectionError</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.errors.ErrorCategory.html">pip_services_runtime.errors.ErrorCategory module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.errors.ErrorCategory.html#pip-services-runtime-errors-errorcategory">pip_services_runtime.errors.ErrorCategory</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.errors.FileError.html">pip_services_runtime.errors.FileError module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.errors.FileError.html#pip-services-runtime-errors-fileerror">pip_services_runtime.errors.FileError</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.errors.MicroserviceError.html">pip_services_runtime.errors.MicroserviceError module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.errors.MicroserviceError.html#pip-services-runtime-errors-microserviceerror">pip_services_runtime.errors.MicroserviceError</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.errors.NotFoundError.html">pip_services_runtime.errors.NotFoundError module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.errors.NotFoundError.html#pip-services-runtime-errors-notfounderror">pip_services_runtime.errors.NotFoundError</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.errors.StateError.html">pip_services_runtime.errors.StateError module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.errors.StateError.html#pip-services-runtime-errors-stateerror">pip_services_runtime.errors.StateError</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.errors.UnauthorizedError.html">pip_services_runtime.errors.UnauthorizedError module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.errors.UnauthorizedError.html#pip-services-runtime-errors-unauthorizederror">pip_services_runtime.errors.UnauthorizedError</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.errors.UnknownError.html">pip_services_runtime.errors.UnknownError module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.errors.UnknownError.html#pip-services-runtime-errors-unknownerror">pip_services_runtime.errors.UnknownError</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.errors.UnsupportedError.html">pip_services_runtime.errors.UnsupportedError module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.errors.UnsupportedError.html#pip-services-runtime-errors-unsupportederror">pip_services_runtime.errors.UnsupportedError</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.errors.html#module-pip_services_runtime.errors">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.errors.html#pip-services-runtime-errors-init">pip_services_runtime.errors.__init__</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.logic.html">pip_services_runtime.logic package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.logic.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.logic.AbstractBusinessLogic.html">pip_services_runtime.logic.AbstractBusinessLogic module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.logic.AbstractBusinessLogic.html#pip-services-runtime-logic-abstractbusinesslogic">pip_services_runtime.logic.AbstractBusinessLogic</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.logic.AbstractController.html">pip_services_runtime.logic.AbstractController module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.logic.AbstractController.html#pip-services-runtime-logic-abstractcontroller">pip_services_runtime.logic.AbstractController</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.logic.AbstractDecorator.html">pip_services_runtime.logic.AbstractDecorator module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.logic.AbstractDecorator.html#pip-services-runtime-logic-abstractdecorator">pip_services_runtime.logic.AbstractDecorator</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.logic.html#module-pip_services_runtime.logic">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.logic.html#pip-services-runtime-logic-init">pip_services_runtime.logic.__init__</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.logs.html">pip_services_runtime.logs package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.logs.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.logs.AbstractLogger.html">pip_services_runtime.logs.AbstractLogger module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.logs.AbstractLogger.html#pip-services-runtime-logs-abstractlogger">pip_services_runtime.logs.AbstractLogger</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.logs.ConsoleLogger.html">pip_services_runtime.logs.ConsoleLogger module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.logs.ConsoleLogger.html#pip-services-runtime-logs-consolelogger">pip_services_runtime.logs.ConsoleLogger</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.logs.LogEntry.html">pip_services_runtime.logs.LogEntry module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.logs.LogEntry.html#pip-services-runtime-logs-logentry">pip_services_runtime.logs.LogEntry</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.logs.LogFormatter.html">pip_services_runtime.logs.LogFormatter module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.logs.LogFormatter.html#pip-services-runtime-logs-logformatter">pip_services_runtime.logs.LogFormatter</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.logs.NullLogger.html">pip_services_runtime.logs.NullLogger module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.logs.NullLogger.html#pip-services-runtime-logs-nulllogger">pip_services_runtime.logs.NullLogger</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.logs.html#module-pip_services_runtime.logs">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.logs.html#pip-services-runtime-logs-init">pip_services_runtime.logs.__init__</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.persistence.html">pip_services_runtime.persistence package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.persistence.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.persistence.AbstractPersistence.html">pip_services_runtime.persistence.AbstractPersistence module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.persistence.AbstractPersistence.html#pip-services-runtime-persistence-abstractpersistence">pip_services_runtime.persistence.AbstractPersistence</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.persistence.FilePersistence.html">pip_services_runtime.persistence.FilePersistence module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.persistence.FilePersistence.html#pip-services-runtime-persistence-filepersistence">pip_services_runtime.persistence.FilePersistence</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.persistence.MemoryPersistence.html">pip_services_runtime.persistence.MemoryPersistence module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.persistence.MemoryPersistence.html#pip-services-runtime-persistence-memorypersistence">pip_services_runtime.persistence.MemoryPersistence</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.persistence.MongoDbPersistence.html">pip_services_runtime.persistence.MongoDbPersistence module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.persistence.MongoDbPersistence.html#pip-services-runtime-persistence-mongodbpersistence">pip_services_runtime.persistence.MongoDbPersistence</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.persistence.html#module-pip_services_runtime.persistence">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.persistence.html#pip-services-runtime-persistence-init">pip_services_runtime.persistence.__init__</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.portability.html">pip_services_runtime.portability package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.portability.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.portability.Converter.html">pip_services_runtime.portability.Converter module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.portability.Converter.html#pip-services-runtime-portability-converter">pip_services_runtime.portability.Converter</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.portability.DynamicMap.html">pip_services_runtime.portability.DynamicMap module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.portability.DynamicMap.html#pip-services-runtime-portability-dynamicmap">pip_services_runtime.portability.DynamicMap</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.portability.html#module-pip_services_runtime.portability">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.portability.html#pip-services-runtime-portability-init">pip_services_runtime.portability.__init__</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.run.html">pip_services_runtime.run package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.run.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.run.LifeCycleManager.html">pip_services_runtime.run.LifeCycleManager module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.run.LifeCycleManager.html#pip-services-runtime-run-lifecyclemanager">pip_services_runtime.run.LifeCycleManager</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.run.LogWriter.html">pip_services_runtime.run.LogWriter module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.run.LogWriter.html#pip-services-runtime-run-logwriter">pip_services_runtime.run.LogWriter</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.run.Microservice.html">pip_services_runtime.run.Microservice module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.run.Microservice.html#pip-services-runtime-run-microservice">pip_services_runtime.run.Microservice</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.run.ProcessRunner.html">pip_services_runtime.run.ProcessRunner module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.run.ProcessRunner.html#pip-services-runtime-run-processrunner">pip_services_runtime.run.ProcessRunner</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.run.html#module-pip_services_runtime.run">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.run.html#pip-services-runtime-run-init">pip_services_runtime.run.__init__</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.services.html">pip_services_runtime.services package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.services.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.services.AbstractService.html">pip_services_runtime.services.AbstractService module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.services.AbstractService.html#pip-services-runtime-services-abstractservice">pip_services_runtime.services.AbstractService</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.services.RestService.html">pip_services_runtime.services.RestService module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.services.RestService.html#pip-services-runtime-services-restservice">pip_services_runtime.services.RestService</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.services.SimpleServer.html">pip_services_runtime.services.SimpleServer module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.services.SimpleServer.html#pip-services-runtime-services-simpleserver">pip_services_runtime.services.SimpleServer</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.services.html#module-pip_services_runtime.services">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.services.html#pip-services-runtime-services-init">pip_services_runtime.services.__init__</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.validation.html">pip_services_runtime.validation package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.validation.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.validation.IPropertyValidationRule.html">pip_services_runtime.validation.IPropertyValidationRule module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.validation.IPropertyValidationRule.html#pip-services-runtime-validation-ipropertyvalidationrule">pip_services_runtime.validation.IPropertyValidationRule</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.validation.IValidationRule.html">pip_services_runtime.validation.IValidationRule module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.validation.IValidationRule.html#pip-services-runtime-validation-ivalidationrule">pip_services_runtime.validation.IValidationRule</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.validation.PropertySchema.html">pip_services_runtime.validation.PropertySchema module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.validation.PropertySchema.html#pip-services-runtime-validation-propertyschema">pip_services_runtime.validation.PropertySchema</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.validation.Schema.html">pip_services_runtime.validation.Schema module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pip_services_runtime.validation.Schema.html#pip-services-runtime-validation-schema">pip_services_runtime.validation.Schema</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.validation.html#module-pip_services_runtime.validation">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pip_services_runtime.validation.html#pip-services-runtime-validation-init">pip_services_runtime.validation.__init__</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.AbstractComponent.html">pip_services_runtime.AbstractComponent module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.AbstractComponent.html#pip-services-runtime-abstractcomponent">pip_services_runtime.AbstractComponent</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.ComponentSet.html">pip_services_runtime.ComponentSet module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.ComponentSet.html#pip-services-runtime-componentset">pip_services_runtime.ComponentSet</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.IAddon.html">pip_services_runtime.IAddon module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.IAddon.html#pip-services-runtime-iaddon">pip_services_runtime.IAddon</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.IBootConfig.html">pip_services_runtime.IBootConfig module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.IBootConfig.html#pip-services-runtime-ibootconfig">pip_services_runtime.IBootConfig</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.IBusinessLogic.html">pip_services_runtime.IBusinessLogic module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.IBusinessLogic.html#pip-services-runtime-ibusinesslogic">pip_services_runtime.IBusinessLogic</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.ICache.html">pip_services_runtime.ICache module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.ICache.html#pip-services-runtime-icache">pip_services_runtime.ICache</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.IClient.html">pip_services_runtime.IClient module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.IClient.html#pip-services-runtime-iclient">pip_services_runtime.IClient</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.IComponent.html">pip_services_runtime.IComponent module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.IComponent.html#pip-services-runtime-icomponent">pip_services_runtime.IComponent</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.IComponentFactory.html">pip_services_runtime.IComponentFactory module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.IComponentFactory.html#pip-services-runtime-icomponentfactory">pip_services_runtime.IComponentFactory</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.IController.html">pip_services_runtime.IController module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.IController.html#pip-services-runtime-icontroller">pip_services_runtime.IController</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.ICounters.html">pip_services_runtime.ICounters module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.ICounters.html#pip-services-runtime-icounters">pip_services_runtime.ICounters</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.IDecorator.html">pip_services_runtime.IDecorator module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.IDecorator.html#pip-services-runtime-idecorator">pip_services_runtime.IDecorator</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.IDiscovery.html">pip_services_runtime.IDiscovery module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.IDiscovery.html#pip-services-runtime-idiscovery">pip_services_runtime.IDiscovery</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.ILogger.html">pip_services_runtime.ILogger module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.ILogger.html#pip-services-runtime-ilogger">pip_services_runtime.ILogger</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.IPersistence.html">pip_services_runtime.IPersistence module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.IPersistence.html#pip-services-runtime-ipersistence">pip_services_runtime.IPersistence</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.IService.html">pip_services_runtime.IService module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.IService.html#pip-services-runtime-iservice">pip_services_runtime.IService</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.ITiming.html">pip_services_runtime.ITiming module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.ITiming.html#pip-services-runtime-itiming">pip_services_runtime.ITiming</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.LogLevel.html">pip_services_runtime.LogLevel module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.LogLevel.html#pip-services-runtime-loglevel">pip_services_runtime.LogLevel</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pip_services_runtime.State.html">pip_services_runtime.State module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pip_services_runtime.State.html#pip-services-runtime-state">pip_services_runtime.State</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="module-pip_services_runtime">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pip_services_runtime" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="pip-services-runtime-init">
+<h3>pip_services_runtime.__init__<a class="headerlink" href="#pip-services-runtime-init" title="Permalink to this headline">¶</a></h3>
+<p>Core module initialization</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">copyright:</th><td class="field-body">Digital Living Software Corp. 2015-2016, see AUTHORS for more details.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">license:</th><td class="field-body">MIT, see LICENSE for more details.</td>
+</tr>
+</tbody>
+</table>
+<dl class="class">
+<dt id="pip_services_runtime.IAddon">
+<em class="property">class </em><code class="descclassname">pip_services_runtime.</code><code class="descname">IAddon</code><a class="headerlink" href="#pip_services_runtime.IAddon" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pip_services_runtime.IComponent.html#pip_services_runtime.IComponent.IComponent" title="pip_services_runtime.IComponent.IComponent"><code class="xref py py-class docutils literal"><span class="pre">pip_services_runtime.IComponent.IComponent</span></code></a></p>
+<p>Addons are microservice extensions that are not directly
+participate in handling business transactions. 
+They can do additional service functions, like randomly
+shutting down component for resilience testing (chaos monkey),
+register VM where microservice is running or collecting usage stats
+from microservice deployments.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="pip_services_runtime.IBootConfig">
+<em class="property">class </em><code class="descclassname">pip_services_runtime.</code><code class="descname">IBootConfig</code><a class="headerlink" href="#pip_services_runtime.IBootConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pip_services_runtime.IComponent.html#pip_services_runtime.IComponent.IComponent" title="pip_services_runtime.IComponent.IComponent"><code class="xref py py-class docutils literal"><span class="pre">pip_services_runtime.IComponent.IComponent</span></code></a></p>
+<p>Interface for microservice component that is responsible for
+reading bootstrap microservice configuration from a configuration repository.</p>
+<p>It is still not clear if that logic shall be in component or
+separate BootstrapConfig classes.</p>
+<dl class="method">
+<dt id="pip_services_runtime.IBootConfig.read_config">
+<code class="descname">read_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.IBootConfig.read_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads microservice configuration from the source</p>
+<p>Returns: a MicroserviceConfiguration object</p>
+<dl class="docutils">
+<dt>Raises:</dt>
+<dd>MicroserviceError: when reading fails for any reason</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pip_services_runtime.IBusinessLogic">
+<em class="property">class </em><code class="descclassname">pip_services_runtime.</code><code class="descname">IBusinessLogic</code><a class="headerlink" href="#pip_services_runtime.IBusinessLogic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pip_services_runtime.IComponent.html#pip_services_runtime.IComponent.IComponent" title="pip_services_runtime.IComponent.IComponent"><code class="xref py py-class docutils literal"><span class="pre">pip_services_runtime.IComponent.IComponent</span></code></a></p>
+<p>Interface for components that implement microservice
+business logic: controllers or decorators.</p>
+<dl class="method">
+<dt id="pip_services_runtime.IBusinessLogic.execute">
+<code class="descname">execute</code><span class="sig-paren">(</span><em>command</em>, <em>correlation_id</em>, <em>args</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.IBusinessLogic.execute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute command by its name with specified arguments.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd><p class="first">command: the command name.
+correlation_id: a unique correlation/transaction id
+args: DynamicMap with command arguments.</p>
+<p>Returns: the execution result.</p>
+<dl class="last docutils">
+<dt>Raises:</dt>
+<dd>MicroserviceError: when execution fails for any reason.</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.IBusinessLogic.find_command">
+<code class="descname">find_command</code><span class="sig-paren">(</span><em>command</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.IBusinessLogic.find_command" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find a specific command by its name.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>command: the command name.</dd>
+</dl>
+<p>Returns: a found ICommand or &lt;b&gt;nil&lt;/b&gt; if nothing was found</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.IBusinessLogic.get_commands">
+<code class="descname">get_commands</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.IBusinessLogic.get_commands" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all supported commands</p>
+<p>Returns: ICommand list with all commands supported by component.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.IBusinessLogic.validate">
+<code class="descname">validate</code><span class="sig-paren">(</span><em>command</em>, <em>args</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.IBusinessLogic.validate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Validates command arguments.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd><p class="first">command: the command name.
+args: DynamicMap with command arguments.</p>
+<p class="last">Return: MicrosericeError list with validation errors or empty list when arguments are valid.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pip_services_runtime.ICache">
+<em class="property">class </em><code class="descclassname">pip_services_runtime.</code><code class="descname">ICache</code><a class="headerlink" href="#pip_services_runtime.ICache" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pip_services_runtime.IComponent.html#pip_services_runtime.IComponent.IComponent" title="pip_services_runtime.IComponent.IComponent"><code class="xref py py-class docutils literal"><span class="pre">pip_services_runtime.IComponent.IComponent</span></code></a></p>
+<p>Transient cache which is used to bypass persistence 
+to increase overall system performance.</p>
+<dl class="method">
+<dt id="pip_services_runtime.ICache.remove">
+<code class="descname">remove</code><span class="sig-paren">(</span><em>key</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.ICache.remove" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes value stored in the cache.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>key: a unique key to locate value in the cache.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.ICache.retrieve">
+<code class="descname">retrieve</code><span class="sig-paren">(</span><em>key</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.ICache.retrieve" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieves a value from the cache by unique key.
+It is recommended to use either string GUIDs like &#8216;123456789abc&#8217;
+or unique natural keys prefixed with the functional group
+like &#8216;pip-services-storage:block-123&#8217;.</p>
+<dl class="docutils">
+<dt>Args: </dt>
+<dd>key: a unique key to locate value in the cache</dd>
+</dl>
+<p>Returns: a cached value or &lt;b&gt;null&lt;/b&gt; if value wasn&#8217;t found or timeout expired.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.ICache.store">
+<code class="descname">store</code><span class="sig-paren">(</span><em>key</em>, <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.ICache.store" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stores value identified by unique key in the cache. 
+Stale timeout is configured in the component options.</p>
+<dl class="docutils">
+<dt>Args: </dt>
+<dd>key: a unique key to locate value in the cache.
+value: a value to store.</dd>
+</dl>
+<p>Returns: a cached value stored in the cache.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pip_services_runtime.IClient">
+<em class="property">class </em><code class="descclassname">pip_services_runtime.</code><code class="descname">IClient</code><a class="headerlink" href="#pip_services_runtime.IClient" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pip_services_runtime.IComponent.html#pip_services_runtime.IComponent.IComponent" title="pip_services_runtime.IComponent.IComponent"><code class="xref py py-class docutils literal"><span class="pre">pip_services_runtime.IComponent.IComponent</span></code></a></p>
+<p>Interface for clients to other microservices or infrastructure services.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="pip_services_runtime.IComponent">
+<em class="property">class </em><code class="descclassname">pip_services_runtime.</code><code class="descname">IComponent</code><a class="headerlink" href="#pip_services_runtime.IComponent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>The most basic interface that identifies microservice component
+and it&#8217;s behavior. It exposes unique component descriptor for 
+<a href="#id1"><span class="problematic" id="id2">`</span></a>identification and allows to manage the component lifecycle to
+transition between several states:
+- Create - creates a new component instance
+- Configure - sets component configuration parameters
+- Link - sets references to other microservice components
+- Open - performs initialization, opens connections and makes the component ready
+- Close - closes connections, deinitializes component.</p>
+<dl class="method">
+<dt id="pip_services_runtime.IComponent.close">
+<code class="descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.IComponent.close" title="Permalink to this definition">¶</a></dt>
+<dd><p>Closes the component and all open connections, performs deinitialization
+steps. Closure can only be done from opened state. Attempts to close
+already closed component or in wrong order will cause exception.</p>
+<p>Returns: None</p>
+<dl class="docutils">
+<dt>Raises:</dt>
+<dd>MicroserviceError: when closure fails.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.IComponent.configure">
+<code class="descname">configure</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.IComponent.configure" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets component configuration parameters and switches component
+to &#8216;Configured&#8217; state. The configuration is only allowed once
+right after creation. Attempts to perform reconfiguration will 
+cause an exception.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>config: ComponentConfig with component configuration parameters.</dd>
+</dl>
+<p>Returns: None</p>
+<dl class="docutils">
+<dt>Raise:</dt>
+<dd>MicroserviceError: when component is in illegal state or configuration validation fails.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.IComponent.get_descriptor">
+<code class="descname">get_descriptor</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.IComponent.get_descriptor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the unique component descriptor that can identify
+and locate the component inside the microservice.</p>
+<p>Returns: ComponentDescriptor the unique component descriptor.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.IComponent.get_state">
+<code class="descname">get_state</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.IComponent.get_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the current state of the component.</p>
+<p>Returns: the current component State.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.IComponent.link">
+<code class="descname">link</code><span class="sig-paren">(</span><em>components</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.IComponent.link" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets references to other microservice components to enable their 
+collaboration. It is recommended to locate necessary components
+and cache their references to void performance hit during
+normal operations. 
+Linking can only be performed once after configuration 
+and will cause an exception when it is called second time 
+or out of order.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>components: ComponentSet with references to microservice components.</dd>
+</dl>
+<p>Returns: None</p>
+<dl class="docutils">
+<dt>Raises:</dt>
+<dd>MicroserviceError: when requires components are not found.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.IComponent.open">
+<code class="descname">open</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.IComponent.open" title="Permalink to this definition">¶</a></dt>
+<dd><p>Opens the component, performs initialization, opens connections
+to external services and makes the component ready for operations.
+Opening can be done multiple times: right after linking 
+or reopening after closure.</p>
+<p>Returns: None</p>
+<dl class="docutils">
+<dt>Raises:</dt>
+<dd>MicroserviceError: when initialization or connections fail.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pip_services_runtime.IComponentFactory">
+<em class="property">class </em><code class="descclassname">pip_services_runtime.</code><code class="descname">IComponentFactory</code><a class="headerlink" href="#pip_services_runtime.IComponentFactory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Factory for microservice components. It registers component classes,
+locates classes by descriptors and creates component instances.
+It also supports inheritance from other factories.</p>
+<dl class="method">
+<dt id="pip_services_runtime.IComponentFactory.create">
+<code class="descname">create</code><span class="sig-paren">(</span><em>descriptor</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.IComponentFactory.create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a component instance using class located by component descriptor.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>descriptor: ComponentDescriptor a component descriptor to locate a component class.</dd>
+</dl>
+<p>Returns: IComponent a created component instance.</p>
+<p>Raises: MicroserviceError when class to construct component wasn&#8217;t found, when constructor failed or component doesn&#8217;t implements required interfaces.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.IComponentFactory.extend">
+<code class="descname">extend</code><span class="sig-paren">(</span><em>*baseFactories</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.IComponentFactory.extend" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extends this factory with base factories.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>baseFactories: IComponentFactory list with base factories to extend registrations of this factory.</dd>
+</dl>
+<p>Returns: None</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.IComponentFactory.find">
+<code class="descname">find</code><span class="sig-paren">(</span><em>descriptor</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.IComponentFactory.find" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lookups for component class by matching component descriptor.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>descriptor: ComponentDescriptor a component descriptor used to locate a class</dd>
+</dl>
+<p>Returns: a located component class function.</p>
+<dl class="docutils">
+<dt>Raises:</dt>
+<dd>MicroserviceError: when component class was not found.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.IComponentFactory.register">
+<code class="descname">register</code><span class="sig-paren">(</span><em>descriptor</em>, <em>class_factory</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.IComponentFactory.register" title="Permalink to this definition">¶</a></dt>
+<dd><p>Registers a component class accompanies by component descriptor.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>descriptor: ComponentDescriptor a component descriptor to locate the class.
+classFactory: a component class function used to create a component.</dd>
+</dl>
+<p>Returns: IComponentFactory a reference to this factory to support chaining registrations.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pip_services_runtime.IController">
+<em class="property">class </em><code class="descclassname">pip_services_runtime.</code><code class="descname">IController</code><a class="headerlink" href="#pip_services_runtime.IController" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pip_services_runtime.IBusinessLogic.html#pip_services_runtime.IBusinessLogic.IBusinessLogic" title="pip_services_runtime.IBusinessLogic.IBusinessLogic"><code class="xref py py-class docutils literal"><span class="pre">pip_services_runtime.IBusinessLogic.IBusinessLogic</span></code></a></p>
+<p>Interface for microservice components that encapsulate
+business logic. These components are the most valuable for
+business and the key idea behind this framework is to protect
+them from changes in persistence, communication or infrastructure
+to ensure their long life.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="pip_services_runtime.ICounters">
+<em class="property">class </em><code class="descclassname">pip_services_runtime.</code><code class="descname">ICounters</code><a class="headerlink" href="#pip_services_runtime.ICounters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pip_services_runtime.IComponent.html#pip_services_runtime.IComponent.IComponent" title="pip_services_runtime.IComponent.IComponent"><code class="xref py py-class docutils literal"><span class="pre">pip_services_runtime.IComponent.IComponent</span></code></a></p>
+<p>Interface for performance counters. These components
+are used to measure non-functional characteristics
+of microservice components: number of calls,
+execution time, timing of key events, etc.</p>
+<dl class="method">
+<dt id="pip_services_runtime.ICounters.begin_timing">
+<code class="descname">begin_timing</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.ICounters.begin_timing" title="Permalink to this definition">¶</a></dt>
+<dd><p>Starts measurement of execution time interval.
+The method returns ITiming object that provides endTiming()
+method that shall be called when execution is completed
+to calculate elapsed time and update the counter.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>name: the name of interval counter.</dd>
+</dl>
+<p>Returns: ITiming callback interface with endTiming() method that shall be called at the end of execution.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.ICounters.increment">
+<code class="descname">increment</code><span class="sig-paren">(</span><em>name</em>, <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.ICounters.increment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Increments counter by specified value.
+This counter can be used to track various numeric characteristics</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>name: the name of the increment value.
+value: number to increase the counter.</dd>
+</dl>
+<p>Returns: None</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.ICounters.increment_one">
+<code class="descname">increment_one</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.ICounters.increment_one" title="Permalink to this definition">¶</a></dt>
+<dd><p>Increments counter by value of 1.
+This counter is often used to calculate
+number of client calls or performed transactions.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>name: the name of counter counter.</dd>
+</dl>
+<p>Returns: None</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.ICounters.last">
+<code class="descname">last</code><span class="sig-paren">(</span><em>name</em>, <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.ICounters.last" title="Permalink to this definition">¶</a></dt>
+<dd><p>Records the last reported value. 
+This counter can be used to store performance values reported
+by clients or current numeric characteristics such as number
+of values stored in cache.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>name: the name of last value counter
+value: the value to be stored as the last one</dd>
+</dl>
+<p>Returns: None</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.ICounters.stats">
+<code class="descname">stats</code><span class="sig-paren">(</span><em>name</em>, <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.ICounters.stats" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates rolling statistics: minimum, maximum, average
+and updates Statistics counter.
+This counter can be used to measure various non-functional
+characteristics, such as amount stored or transmitted data,
+customer feedback, etc.</p>
+<dl class="docutils">
+<dt>Args: </dt>
+<dd>name: the name of statistics counter.
+value: the value to add to statistics calculations.</dd>
+</dl>
+<p>Returns: None</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.ICounters.timestamp">
+<code class="descname">timestamp</code><span class="sig-paren">(</span><em>name</em>, <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.ICounters.timestamp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Records specified time.
+This counter can be used to tack timing of key
+business transactions as reported by clients.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>name: the name of timing counter.
+value: the reported timing to be recorded.</dd>
+</dl>
+<p>Returns: None</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.ICounters.timestamp_now">
+<code class="descname">timestamp_now</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.ICounters.timestamp_now" title="Permalink to this definition">¶</a></dt>
+<dd><p>Records the current time.
+This counter can be used to track timing of key business transactions.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>name: the name of timing counter</dd>
+</dl>
+<p>Returns: None</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pip_services_runtime.IDecorator">
+<em class="property">class </em><code class="descclassname">pip_services_runtime.</code><code class="descname">IDecorator</code><a class="headerlink" href="#pip_services_runtime.IDecorator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pip_services_runtime.IBusinessLogic.html#pip_services_runtime.IBusinessLogic.IBusinessLogic" title="pip_services_runtime.IBusinessLogic.IBusinessLogic"><code class="xref py py-class docutils literal"><span class="pre">pip_services_runtime.IBusinessLogic.IBusinessLogic</span></code></a></p>
+<p>Decorators are used to inject custom behavior into
+existing microservice. They alter business logic before or after
+execution or may override it entirely. 
+The custom logic can make use of custom fields  
+in persisted data or may call custom services.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="pip_services_runtime.IDiscovery">
+<em class="property">class </em><code class="descclassname">pip_services_runtime.</code><code class="descname">IDiscovery</code><a class="headerlink" href="#pip_services_runtime.IDiscovery" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pip_services_runtime.IComponent.html#pip_services_runtime.IComponent.IComponent" title="pip_services_runtime.IComponent.IComponent"><code class="xref py py-class docutils literal"><span class="pre">pip_services_runtime.IComponent.IComponent</span></code></a></p>
+<p>Service discovery component used to register addresses of the microservice
+service endpoints or to resolve addresses of external services called by clients.</p>
+<dl class="method">
+<dt id="pip_services_runtime.IDiscovery.register">
+<code class="descname">register</code><span class="sig-paren">(</span><em>endpoint</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.IDiscovery.register" title="Permalink to this definition">¶</a></dt>
+<dd><p>Register in discovery service endpoint where API service binds to.
+The endpoint shall contain discovery name to locate the registration.
+If it&#8217;s not defined, the registration doesn&#8217;t do anything.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>endpoint: Endpoint to be registered.</dd>
+</dl>
+<p>Returns: None</p>
+<dl class="docutils">
+<dt>Raises:</dt>
+<dd>MicroserviceError: when registration fails for whatever reasons</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.IDiscovery.resolve">
+<code class="descname">resolve</code><span class="sig-paren">(</span><em>endpoints</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.IDiscovery.resolve" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resolves one endpoint from the list of service endpoints to be called by a client.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>endpoints: a list of Endpoints to be resolved from. The list must contain at least one endpoint with discovery name.</dd>
+</dl>
+<p>Returns: a resolved Endpoint.</p>
+<dl class="docutils">
+<dt>Raises:</dt>
+<dd>MicroserviceError: when resolution failed for whatever reasons.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.IDiscovery.resolve_all">
+<code class="descname">resolve_all</code><span class="sig-paren">(</span><em>endpoints</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.IDiscovery.resolve_all" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resolves a list of endpoints from to be called by a client.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>endpoints: a list of Endpoints to be resolved from. The list must contain at least one endpoint with discovery name.</dd>
+</dl>
+<p>Returns: a list with resolved Endpoints.</p>
+<dl class="docutils">
+<dt>Raises:</dt>
+<dd>MicroserviceError: when resolution failed for whatever reasons.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pip_services_runtime.ILogger">
+<em class="property">class </em><code class="descclassname">pip_services_runtime.</code><code class="descname">ILogger</code><a class="headerlink" href="#pip_services_runtime.ILogger" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pip_services_runtime.IComponent.html#pip_services_runtime.IComponent.IComponent" title="pip_services_runtime.IComponent.IComponent"><code class="xref py py-class docutils literal"><span class="pre">pip_services_runtime.IComponent.IComponent</span></code></a></p>
+<p>Logger that logs messages from other microservice components.</p>
+<dl class="method">
+<dt id="pip_services_runtime.ILogger.get_level">
+<code class="descname">get_level</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.ILogger.get_level" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the current level of details</p>
+<p>Returns: the current log level</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.ILogger.log">
+<code class="descname">log</code><span class="sig-paren">(</span><em>level</em>, <em>component</em>, <em>correlation_id</em>, <em>message</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.ILogger.log" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writes a message to the log</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>level: a log level - Fatal, Error, Warn, Info, Debug or Trace
+component: a component name
+correlation_id: a unique transaction correlation id
+message: a log message</dd>
+</dl>
+<p>Returns: None</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pip_services_runtime.IPersistence">
+<em class="property">class </em><code class="descclassname">pip_services_runtime.</code><code class="descname">IPersistence</code><a class="headerlink" href="#pip_services_runtime.IPersistence" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pip_services_runtime.IComponent.html#pip_services_runtime.IComponent.IComponent" title="pip_services_runtime.IComponent.IComponent"><code class="xref py py-class docutils literal"><span class="pre">pip_services_runtime.IComponent.IComponent</span></code></a></p>
+<p>Interface for microservice persistent components that
+are responsible for storing and retrieving data.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="pip_services_runtime.IService">
+<em class="property">class </em><code class="descclassname">pip_services_runtime.</code><code class="descname">IService</code><a class="headerlink" href="#pip_services_runtime.IService" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pip_services_runtime.IComponent.html#pip_services_runtime.IComponent.IComponent" title="pip_services_runtime.IComponent.IComponent"><code class="xref py py-class docutils literal"><span class="pre">pip_services_runtime.IComponent.IComponent</span></code></a></p>
+<p>Interface for API service components that
+expose microservice operations for external clients.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="pip_services_runtime.ITiming">
+<em class="property">class </em><code class="descclassname">pip_services_runtime.</code><code class="descname">ITiming</code><a class="headerlink" href="#pip_services_runtime.ITiming" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Callback interface to complete measuring time interval</p>
+<dl class="method">
+<dt id="pip_services_runtime.ITiming.end_timing">
+<code class="descname">end_timing</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.ITiming.end_timing" title="Permalink to this definition">¶</a></dt>
+<dd><p>Completes measuring time interval and updates counter.</p>
+<p>Returns: None</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pip_services_runtime.LogLevel">
+<em class="property">class </em><code class="descclassname">pip_services_runtime.</code><code class="descname">LogLevel</code><a class="headerlink" href="#pip_services_runtime.LogLevel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Logging levels to determine details of logged messages</p>
+<dl class="attribute">
+<dt id="pip_services_runtime.LogLevel.Debug">
+<code class="descname">Debug</code><em class="property"> = 5</em><a class="headerlink" href="#pip_services_runtime.LogLevel.Debug" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.LogLevel.Error">
+<code class="descname">Error</code><em class="property"> = 2</em><a class="headerlink" href="#pip_services_runtime.LogLevel.Error" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.LogLevel.Fatal">
+<code class="descname">Fatal</code><em class="property"> = 1</em><a class="headerlink" href="#pip_services_runtime.LogLevel.Fatal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.LogLevel.Info">
+<code class="descname">Info</code><em class="property"> = 4</em><a class="headerlink" href="#pip_services_runtime.LogLevel.Info" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.LogLevel.Nothing">
+<code class="descname">Nothing</code><em class="property"> = 0</em><a class="headerlink" href="#pip_services_runtime.LogLevel.Nothing" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.LogLevel.Trace">
+<code class="descname">Trace</code><em class="property"> = 6</em><a class="headerlink" href="#pip_services_runtime.LogLevel.Trace" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.LogLevel.Warn">
+<code class="descname">Warn</code><em class="property"> = 3</em><a class="headerlink" href="#pip_services_runtime.LogLevel.Warn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pip_services_runtime.State">
+<em class="property">class </em><code class="descclassname">pip_services_runtime.</code><code class="descname">State</code><a class="headerlink" href="#pip_services_runtime.State" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>State in lifecycle of components or the entire microservice</p>
+<dl class="attribute">
+<dt id="pip_services_runtime.State.Closed">
+<code class="descname">Closed</code><em class="property"> = 4</em><a class="headerlink" href="#pip_services_runtime.State.Closed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.State.Configured">
+<code class="descname">Configured</code><em class="property"> = 1</em><a class="headerlink" href="#pip_services_runtime.State.Configured" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.State.Initial">
+<code class="descname">Initial</code><em class="property"> = 0</em><a class="headerlink" href="#pip_services_runtime.State.Initial" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.State.Linked">
+<code class="descname">Linked</code><em class="property"> = 2</em><a class="headerlink" href="#pip_services_runtime.State.Linked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.State.Opened">
+<code class="descname">Opened</code><em class="property"> = 3</em><a class="headerlink" href="#pip_services_runtime.State.Opened" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.State.Ready">
+<code class="descname">Ready</code><em class="property"> = 3</em><a class="headerlink" href="#pip_services_runtime.State.Ready" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pip_services_runtime.State.Undefined">
+<code class="descname">Undefined</code><em class="property"> = -1</em><a class="headerlink" href="#pip_services_runtime.State.Undefined" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pip_services_runtime.ComponentSet">
+<em class="property">class </em><code class="descclassname">pip_services_runtime.</code><code class="descname">ComponentSet</code><span class="sig-paren">(</span><em>components=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.ComponentSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>A list with references to all microservice components.
+It is capable of searching and retrieving components by specified criteria.</p>
+<dl class="method">
+<dt id="pip_services_runtime.ComponentSet.add">
+<code class="descname">add</code><span class="sig-paren">(</span><em>component</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.ComponentSet.add" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a single component to the list</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>component: IComponent to be added to the list</dd>
+</dl>
+<p>Returns: None</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.ComponentSet.add_all">
+<code class="descname">add_all</code><span class="sig-paren">(</span><em>components</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.ComponentSet.add_all" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds multiple components to the list</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>components: IComponent list of components to be added.</dd>
+</dl>
+<p>Returns: None</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="pip_services_runtime.ComponentSet.from_components">
+<em class="property">static </em><code class="descname">from_components</code><span class="sig-paren">(</span><em>*components</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.ComponentSet.from_components" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a component list from components passed as params</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>components: IComponent list of components</dd>
+</dl>
+<p>Returns: constructed component set</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.ComponentSet.get_all_by_category">
+<code class="descname">get_all_by_category</code><span class="sig-paren">(</span><em>category</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.ComponentSet.get_all_by_category" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets a sublist of component references from specific category.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>category: a category to pick components.</dd>
+</dl>
+<p>Returns: IComponent list of found components</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.ComponentSet.get_all_optional">
+<code class="descname">get_all_optional</code><span class="sig-paren">(</span><em>descriptor</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.ComponentSet.get_all_optional" title="Permalink to this definition">¶</a></dt>
+<dd><p>Finds all components that match specified descriptor.
+The descriptor is used to specify number of search criteria or their combinations:
+- By category
+- By logical group
+- By functional type
+- By implementation version</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>descriptor: a component descriptor as a search criteria</dd>
+</dl>
+<p>Returns: IComponent list with found components</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.ComponentSet.get_all_ordered">
+<code class="descname">get_all_ordered</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.ComponentSet.get_all_ordered" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets a list with all component references sorted in strict 
+initialization order: Discovery, Logs, Counters, Cache, Persistence, Controller, ...
+This sorting order it require to lifecycle management to proper sequencing.</p>
+<p>Returns: IComponent list with components sorted by categories</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.ComponentSet.get_all_required">
+<code class="descname">get_all_required</code><span class="sig-paren">(</span><em>descriptor</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.ComponentSet.get_all_required" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets all components that match specified descriptor.
+If no components found it throws a configuration error.
+The descriptor is used to specify number of search criteria or their combinations:
+- By category
+- By logical group
+- By functional type
+- By implementation version</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>descriptor: a component descriptor as a search criteria</dd>
+</dl>
+<p>Returns: a list with found components</p>
+<dl class="docutils">
+<dt>Raises:</dt>
+<dd>MicroserviceError: when no components found</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.ComponentSet.get_all_unordered">
+<code class="descname">get_all_unordered</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.ComponentSet.get_all_unordered" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of components in random order.
+Since it doesn&#8217;t perform additional calculations
+this operation is faster then getting ordered list.</p>
+<p>Returns: IComponent list with unsorted components.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.ComponentSet.get_one_optional">
+<code class="descname">get_one_optional</code><span class="sig-paren">(</span><em>descriptor</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.ComponentSet.get_one_optional" title="Permalink to this definition">¶</a></dt>
+<dd><p>Finds the a single component instance (the first one)
+that matches to the specified descriptor. 
+The descriptor is used to specify number of search criteria or their combinations:
+- By category
+- By logical group
+- By functional type
+- By implementation version</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>descriptor: IComponent component descriptor as a search criteria</dd>
+</dl>
+<p>Returns: a found IComponent instance or None if nothing was found.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.ComponentSet.get_one_prior">
+<code class="descname">get_one_prior</code><span class="sig-paren">(</span><em>component</em>, <em>descriptor</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.ComponentSet.get_one_prior" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets a component instance that matches the specified descriptor defined
+<em>before</em> specified instance. If nothing is found it throws a configuration error.
+This method is used primarily to find dependencies between business logic components
+in their logical chain. The sequence goes in order as components were configured. 
+The descriptor is used to specify number of search criteria or their combinations:
+- By category
+- By logical group
+- By functional type
+- By implementation version</p>
+<p>For instance, quite often the descriptor will look as &#8220;logic / group / * / <a href="#id3"><span class="problematic" id="id4">*</span></a>&#8220;</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>component: IComponent that searches for prior dependencies
+descriptor: a component descriptor as a search criteria</dd>
+</dl>
+<p>Returns: a found IComponent instance</p>
+<dl class="docutils">
+<dt>Raises:</dt>
+<dd>MicroserviceError: when no components found</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.ComponentSet.get_one_required">
+<code class="descname">get_one_required</code><span class="sig-paren">(</span><em>descriptor</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.ComponentSet.get_one_required" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets a component instance that matches the specified descriptor.
+If nothing is found it throws a configuration error.
+The descriptor is used to specify number of search criteria or their combinations:
+- By category
+- By logical group
+- By functional type
+- By implementation version</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>descriptor: a component descriptor as a search criteria</dd>
+</dl>
+<p>Returns: a found IComponent instance</p>
+<dl class="docutils">
+<dt>Raises:</dt>
+<dd>MicroserviceError: when no components found</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pip_services_runtime.AbstractComponent">
+<em class="property">class </em><code class="descclassname">pip_services_runtime.</code><code class="descname">AbstractComponent</code><span class="sig-paren">(</span><em>descriptor</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.AbstractComponent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pip_services_runtime.IComponent.html#pip_services_runtime.IComponent.IComponent" title="pip_services_runtime.IComponent.IComponent"><code class="xref py py-class docutils literal"><span class="pre">pip_services_runtime.IComponent.IComponent</span></code></a></p>
+<p>Abstract implementation for all microservice components.</p>
+<dl class="method">
+<dt id="pip_services_runtime.AbstractComponent.begin_timing">
+<code class="descname">begin_timing</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.AbstractComponent.begin_timing" title="Permalink to this definition">¶</a></dt>
+<dd><p>Starts measurement of execution time interval.
+The method returns ITiming object that provides endTiming()
+method that shall be called when execution is completed
+to calculate elapsed time and update the counter.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>name: the name of interval counter.</dd>
+<dt>Returns: ITiming callback interface with endTiming() method </dt>
+<dd>that shall be called at the end of execution.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.AbstractComponent.check_current_state">
+<code class="descname">check_current_state</code><span class="sig-paren">(</span><em>state</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.AbstractComponent.check_current_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks if specified state matches to the current one.
+Args:</p>
+<blockquote>
+<div>state: the expected state</div></blockquote>
+<p>Returns: None</p>
+<dl class="docutils">
+<dt>Raises:</dt>
+<dd>MicroserviceError: when current and expected states don&#8217;t match</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.AbstractComponent.check_new_state_allowed">
+<code class="descname">check_new_state_allowed</code><span class="sig-paren">(</span><em>new_state</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.AbstractComponent.check_new_state_allowed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks if transition to the specified state is allowed from the current one.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>new_state: the new state to make transition</dd>
+</dl>
+<p>Returns: None</p>
+<dl class="docutils">
+<dt>Raises:</dt>
+<dd>MicroserviceError: when transition is not allowed.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.AbstractComponent.close">
+<code class="descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.AbstractComponent.close" title="Permalink to this definition">¶</a></dt>
+<dd><p>Closes the component and all open connections, performs deinitialization
+steps. Closure can only be done from opened state. Attempts to close
+already closed component or in wrong order will cause exception.</p>
+<p>Returns: None</p>
+<dl class="docutils">
+<dt>Raises:</dt>
+<dd>MicroserviceError: with closure fails.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.AbstractComponent.configure">
+<code class="descname">configure</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.AbstractComponent.configure" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets component configuration parameters and switches from component
+to &#8216;Configured&#8217; state. The configuration is only allowed once
+right after creation. Attempts to perform reconfiguration will cause an exception.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>config: ComponentConfig with component configuration parameters.</dd>
+</dl>
+<p>Returns: None</p>
+<dl class="docutils">
+<dt>Raises:</dt>
+<dd>MicroserviceError: when component is in illegal state or configuration validation fails.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.AbstractComponent.debug">
+<code class="descname">debug</code><span class="sig-paren">(</span><em>correlation_id</em>, <em>*message</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.AbstractComponent.debug" title="Permalink to this definition">¶</a></dt>
+<dd><p>Logs high-level debugging messages</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>correlation_id: a unique id to identify distributed transaction
+message: a list with message values</dd>
+</dl>
+<p>Returns: None</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.AbstractComponent.error">
+<code class="descname">error</code><span class="sig-paren">(</span><em>correlation_id</em>, <em>*message</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.AbstractComponent.error" title="Permalink to this definition">¶</a></dt>
+<dd><p>Logs recoverable error</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>correlation_id: a unique id to identify distributed transaction
+message: a list with message values</dd>
+</dl>
+<p>Returns: None</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.AbstractComponent.fatal">
+<code class="descname">fatal</code><span class="sig-paren">(</span><em>correlation_id</em>, <em>*message</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.AbstractComponent.fatal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Logs fatal error that causes microservice to shutdown</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>correlation_id: a unique id to identify distributed transaction
+message: a list with message values</dd>
+</dl>
+<p>Returns: None</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.AbstractComponent.get_descriptor">
+<code class="descname">get_descriptor</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.AbstractComponent.get_descriptor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the unique component descriptor that can identify
+and locate the component inside the microservice.</p>
+<p>Returns: the unique component descriptor.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.AbstractComponent.get_state">
+<code class="descname">get_state</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.AbstractComponent.get_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the current state of the component.</p>
+<p>Returns: the current component state.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.AbstractComponent.increment">
+<code class="descname">increment</code><span class="sig-paren">(</span><em>name</em>, <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.AbstractComponent.increment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Increments counter by specified value.
+This counter can be used to track various numeric characteristics</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>name: the name of the increment value.
+value: number to increase the counter.</dd>
+</dl>
+<p>Returns: None</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.AbstractComponent.increment_one">
+<code class="descname">increment_one</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.AbstractComponent.increment_one" title="Permalink to this definition">¶</a></dt>
+<dd><p>Increments counter by value of 1.
+This counter is often used to calculate
+number of client calls or performed transactions.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>name: the name of counter counter.</dd>
+</dl>
+<p>Returns: None</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.AbstractComponent.info">
+<code class="descname">info</code><span class="sig-paren">(</span><em>correlation_id</em>, <em>*message</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.AbstractComponent.info" title="Permalink to this definition">¶</a></dt>
+<dd><p>Logs important information message</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>correlation_id: a unique id to identify distributed transaction
+message: a list with message values</dd>
+</dl>
+<p>Returns: None</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.AbstractComponent.last">
+<code class="descname">last</code><span class="sig-paren">(</span><em>name</em>, <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.AbstractComponent.last" title="Permalink to this definition">¶</a></dt>
+<dd><p>Records the last reported value. 
+This counter can be used to store performance values reported
+by clients or current numeric characteristics such as number
+of values stored in cache.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>name: the name of last value counter
+value: the value to be stored as the last one</dd>
+</dl>
+<p>Returns: None</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.AbstractComponent.link">
+<code class="descname">link</code><span class="sig-paren">(</span><em>components</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.AbstractComponent.link" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets references to other microservice components to enable their 
+collaboration. It is recommended to locate necessary components
+and cache their references to void performance hit during normal operations.</p>
+<p>Linking can only be performed once after configuration 
+and will cause an exception when it is called second time or out of order.</p>
+<dl class="docutils">
+<dt>Args: </dt>
+<dd>components: ComponentSet references to microservice components.</dd>
+</dl>
+<p>Returns: None</p>
+<dl class="docutils">
+<dt>Raises:</dt>
+<dd>MicroserviceError: when requires components are not found.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.AbstractComponent.open">
+<code class="descname">open</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.AbstractComponent.open" title="Permalink to this definition">¶</a></dt>
+<dd><p>Opens the component, performs initialization, opens connections
+to external services and makes the component ready for operations.
+Opening can be done multiple times: right after linking 
+or reopening after closure.</p>
+<p>Returns: None</p>
+<dl class="docutils">
+<dt>Raises:</dt>
+<dd>MicroserviceError: when initialization or connections fail.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.AbstractComponent.stats">
+<code class="descname">stats</code><span class="sig-paren">(</span><em>name</em>, <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.AbstractComponent.stats" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates rolling statistics: minimum, maximum, average
+and updates Statistics counter.
+This counter can be used to measure various non-functional
+characteristics, such as amount stored or transmitted data,
+customer feedback, etc.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>name: the name of statistics counter.
+value: the value to add to statistics calculations.</dd>
+</dl>
+<p>Returns: None</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.AbstractComponent.timestamp">
+<code class="descname">timestamp</code><span class="sig-paren">(</span><em>name</em>, <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.AbstractComponent.timestamp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Records specified time.
+This counter can be used to tack timing of key business transactions as reported by clients.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>name: the name of timing counter.
+value: the reported timing to be recorded.</dd>
+</dl>
+<p>Returns: None</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.AbstractComponent.timestamp_now">
+<code class="descname">timestamp_now</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.AbstractComponent.timestamp_now" title="Permalink to this definition">¶</a></dt>
+<dd><p>Records the current time.
+This counter can be used to track timing of key business transactions.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>name: the name of timing counter</dd>
+</dl>
+<p>Returns: None</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.AbstractComponent.trace">
+<code class="descname">trace</code><span class="sig-paren">(</span><em>correlation_id</em>, <em>*message</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.AbstractComponent.trace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Logs fine-granular debugging message</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>correlation_id: a unique id to identify distributed transaction
+message: a list with message values</dd>
+</dl>
+<p>Returns: None</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.AbstractComponent.warn">
+<code class="descname">warn</code><span class="sig-paren">(</span><em>correlation_id</em>, <em>*message</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.AbstractComponent.warn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Logs warning messages</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>correlation_id: a unique id to identify distributed transaction
+message: a list with message values</dd>
+</dl>
+<p>Returns: None</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">pip_services_runtime package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-pip_services_runtime">Module contents</a><ul>
+<li><a class="reference internal" href="#pip-services-runtime-init">pip_services_runtime.__init__</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">pip_services_runtime</a></li>
+      <li>Next: <a href="pip_services_runtime.addons.html" title="next chapter">pip_services_runtime.addons package</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/pip_services_runtime.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Digital Living Software Corp..
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+      |
+      <a href="_sources/pip_services_runtime.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

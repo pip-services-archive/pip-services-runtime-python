@@ -1,0 +1,7 @@
+pip_services_runtime.errors.ConflictError module
+================================================
+
+.. automodule:: pip_services_runtime.errors.ConflictError
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,7 @@
+pip_services_runtime.IPersistence module
+========================================
+
+.. automodule:: pip_services_runtime.IPersistence
+    :members:
+    :undoc-members:
+    :show-inheritance:

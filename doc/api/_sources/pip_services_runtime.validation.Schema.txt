@@ -1,0 +1,7 @@
+pip_services_runtime.validation.Schema module
+=============================================
+
+.. automodule:: pip_services_runtime.validation.Schema
+    :members:
+    :undoc-members:
+    :show-inheritance:

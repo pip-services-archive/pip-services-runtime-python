@@ -1,0 +1,7 @@
+pip_services_runtime.IBusinessLogic module
+==========================================
+
+.. automodule:: pip_services_runtime.IBusinessLogic
+    :members:
+    :undoc-members:
+    :show-inheritance:

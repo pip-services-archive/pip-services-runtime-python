@@ -1,0 +1,7 @@
+pip_services_runtime.logic.AbstractController module
+====================================================
+
+.. automodule:: pip_services_runtime.logic.AbstractController
+    :members:
+    :undoc-members:
+    :show-inheritance:

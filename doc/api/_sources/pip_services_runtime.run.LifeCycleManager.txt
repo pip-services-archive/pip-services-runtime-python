@@ -1,0 +1,7 @@
+pip_services_runtime.run.LifeCycleManager module
+================================================
+
+.. automodule:: pip_services_runtime.run.LifeCycleManager
+    :members:
+    :undoc-members:
+    :show-inheritance:

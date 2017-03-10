@@ -1,0 +1,7 @@
+pip_services_runtime.errors.NotFoundError module
+================================================
+
+.. automodule:: pip_services_runtime.errors.NotFoundError
+    :members:
+    :undoc-members:
+    :show-inheritance:

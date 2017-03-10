@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>pip_services_runtime.ComponentSet module &mdash; Pip.Services Runtime for Python API</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Pip.Services Runtime for Python API" href="index.html" />
+    <link rel="up" title="pip_services_runtime package" href="pip_services_runtime.html" />
+    <link rel="next" title="pip_services_runtime.IAddon module" href="pip_services_runtime.IAddon.html" />
+    <link rel="prev" title="pip_services_runtime.AbstractComponent module" href="pip_services_runtime.AbstractComponent.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-pip_services_runtime.ComponentSet">
+<span id="pip-services-runtime-componentset-module"></span><h1>pip_services_runtime.ComponentSet module<a class="headerlink" href="#module-pip_services_runtime.ComponentSet" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="pip-services-runtime-componentset">
+<h2>pip_services_runtime.ComponentSet<a class="headerlink" href="#pip-services-runtime-componentset" title="Permalink to this headline">¶</a></h2>
+<p>Microservice component set implementation</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">copyright:</th><td class="field-body">Digital Living Software Corp. 2015-2016, see AUTHORS for more details.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">license:</th><td class="field-body">MIT, see LICENSE for more details.</td>
+</tr>
+</tbody>
+</table>
+<dl class="class">
+<dt id="pip_services_runtime.ComponentSet.ComponentSet">
+<em class="property">class </em><code class="descclassname">pip_services_runtime.ComponentSet.</code><code class="descname">ComponentSet</code><span class="sig-paren">(</span><em>components=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.ComponentSet.ComponentSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>A list with references to all microservice components.
+It is capable of searching and retrieving components by specified criteria.</p>
+<dl class="method">
+<dt id="pip_services_runtime.ComponentSet.ComponentSet.add">
+<code class="descname">add</code><span class="sig-paren">(</span><em>component</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.ComponentSet.ComponentSet.add" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a single component to the list</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>component: IComponent to be added to the list</dd>
+</dl>
+<p>Returns: None</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.ComponentSet.ComponentSet.add_all">
+<code class="descname">add_all</code><span class="sig-paren">(</span><em>components</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.ComponentSet.ComponentSet.add_all" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds multiple components to the list</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>components: IComponent list of components to be added.</dd>
+</dl>
+<p>Returns: None</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="pip_services_runtime.ComponentSet.ComponentSet.from_components">
+<em class="property">static </em><code class="descname">from_components</code><span class="sig-paren">(</span><em>*components</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.ComponentSet.ComponentSet.from_components" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a component list from components passed as params</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>components: IComponent list of components</dd>
+</dl>
+<p>Returns: constructed component set</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.ComponentSet.ComponentSet.get_all_by_category">
+<code class="descname">get_all_by_category</code><span class="sig-paren">(</span><em>category</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.ComponentSet.ComponentSet.get_all_by_category" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets a sublist of component references from specific category.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>category: a category to pick components.</dd>
+</dl>
+<p>Returns: IComponent list of found components</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.ComponentSet.ComponentSet.get_all_optional">
+<code class="descname">get_all_optional</code><span class="sig-paren">(</span><em>descriptor</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.ComponentSet.ComponentSet.get_all_optional" title="Permalink to this definition">¶</a></dt>
+<dd><p>Finds all components that match specified descriptor.
+The descriptor is used to specify number of search criteria or their combinations:
+- By category
+- By logical group
+- By functional type
+- By implementation version</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>descriptor: a component descriptor as a search criteria</dd>
+</dl>
+<p>Returns: IComponent list with found components</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.ComponentSet.ComponentSet.get_all_ordered">
+<code class="descname">get_all_ordered</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.ComponentSet.ComponentSet.get_all_ordered" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets a list with all component references sorted in strict 
+initialization order: Discovery, Logs, Counters, Cache, Persistence, Controller, ...
+This sorting order it require to lifecycle management to proper sequencing.</p>
+<p>Returns: IComponent list with components sorted by categories</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.ComponentSet.ComponentSet.get_all_required">
+<code class="descname">get_all_required</code><span class="sig-paren">(</span><em>descriptor</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.ComponentSet.ComponentSet.get_all_required" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets all components that match specified descriptor.
+If no components found it throws a configuration error.
+The descriptor is used to specify number of search criteria or their combinations:
+- By category
+- By logical group
+- By functional type
+- By implementation version</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>descriptor: a component descriptor as a search criteria</dd>
+</dl>
+<p>Returns: a list with found components</p>
+<dl class="docutils">
+<dt>Raises:</dt>
+<dd>MicroserviceError: when no components found</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.ComponentSet.ComponentSet.get_all_unordered">
+<code class="descname">get_all_unordered</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.ComponentSet.ComponentSet.get_all_unordered" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of components in random order.
+Since it doesn&#8217;t perform additional calculations
+this operation is faster then getting ordered list.</p>
+<p>Returns: IComponent list with unsorted components.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.ComponentSet.ComponentSet.get_one_optional">
+<code class="descname">get_one_optional</code><span class="sig-paren">(</span><em>descriptor</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.ComponentSet.ComponentSet.get_one_optional" title="Permalink to this definition">¶</a></dt>
+<dd><p>Finds the a single component instance (the first one)
+that matches to the specified descriptor. 
+The descriptor is used to specify number of search criteria or their combinations:
+- By category
+- By logical group
+- By functional type
+- By implementation version</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>descriptor: IComponent component descriptor as a search criteria</dd>
+</dl>
+<p>Returns: a found IComponent instance or None if nothing was found.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.ComponentSet.ComponentSet.get_one_prior">
+<code class="descname">get_one_prior</code><span class="sig-paren">(</span><em>component</em>, <em>descriptor</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.ComponentSet.ComponentSet.get_one_prior" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets a component instance that matches the specified descriptor defined
+<em>before</em> specified instance. If nothing is found it throws a configuration error.
+This method is used primarily to find dependencies between business logic components
+in their logical chain. The sequence goes in order as components were configured. 
+The descriptor is used to specify number of search criteria or their combinations:
+- By category
+- By logical group
+- By functional type
+- By implementation version</p>
+<p>For instance, quite often the descriptor will look as &#8220;logic / group / * / <a href="#id1"><span class="problematic" id="id2">*</span></a>&#8220;</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>component: IComponent that searches for prior dependencies
+descriptor: a component descriptor as a search criteria</dd>
+</dl>
+<p>Returns: a found IComponent instance</p>
+<dl class="docutils">
+<dt>Raises:</dt>
+<dd>MicroserviceError: when no components found</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.ComponentSet.ComponentSet.get_one_required">
+<code class="descname">get_one_required</code><span class="sig-paren">(</span><em>descriptor</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.ComponentSet.ComponentSet.get_one_required" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets a component instance that matches the specified descriptor.
+If nothing is found it throws a configuration error.
+The descriptor is used to specify number of search criteria or their combinations:
+- By category
+- By logical group
+- By functional type
+- By implementation version</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>descriptor: a component descriptor as a search criteria</dd>
+</dl>
+<p>Returns: a found IComponent instance</p>
+<dl class="docutils">
+<dt>Raises:</dt>
+<dd>MicroserviceError: when no components found</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">pip_services_runtime.ComponentSet module</a><ul>
+<li><a class="reference internal" href="#pip-services-runtime-componentset">pip_services_runtime.ComponentSet</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="pip_services_runtime.html">pip_services_runtime package</a><ul>
+      <li>Previous: <a href="pip_services_runtime.AbstractComponent.html" title="previous chapter">pip_services_runtime.AbstractComponent module</a></li>
+      <li>Next: <a href="pip_services_runtime.IAddon.html" title="next chapter">pip_services_runtime.IAddon module</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/pip_services_runtime.ComponentSet.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Digital Living Software Corp..
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+      |
+      <a href="_sources/pip_services_runtime.ComponentSet.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

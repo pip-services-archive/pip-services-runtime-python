@@ -1,0 +1,340 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>pip_services_runtime.portability.DynamicMap module &mdash; Pip.Services Runtime for Python API</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Pip.Services Runtime for Python API" href="index.html" />
+    <link rel="up" title="pip_services_runtime.portability package" href="pip_services_runtime.portability.html" />
+    <link rel="next" title="pip_services_runtime.run package" href="pip_services_runtime.run.html" />
+    <link rel="prev" title="pip_services_runtime.portability.Converter module" href="pip_services_runtime.portability.Converter.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-pip_services_runtime.portability.DynamicMap">
+<span id="pip-services-runtime-portability-dynamicmap-module"></span><h1>pip_services_runtime.portability.DynamicMap module<a class="headerlink" href="#module-pip_services_runtime.portability.DynamicMap" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="pip-services-runtime-portability-dynamicmap">
+<h2>pip_services_runtime.portability.DynamicMap<a class="headerlink" href="#pip-services-runtime-portability-dynamicmap" title="Permalink to this headline">¶</a></h2>
+<p>Portable implementation of dynamic map object</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">copyright:</th><td class="field-body">Digital Living Software Corp. 2015-2016, see AUTHORS for more details.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">license:</th><td class="field-body">MIT, see LICENSE for more details.</td>
+</tr>
+</tbody>
+</table>
+<dl class="class">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap">
+<em class="property">class </em><code class="descclassname">pip_services_runtime.portability.DynamicMap.</code><code class="descname">DynamicMap</code><span class="sig-paren">(</span><em>map=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">dict</span></code></p>
+<p>Portable implementation of dynamic data object represented as hash-map of values.
+It supports handling hierarchical data structures and arrays</p>
+<dl class="method">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap.assign_to">
+<code class="descname">assign_to</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap.assign_to" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="staticmethod">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap.from_tuples">
+<em class="property">static </em><code class="descname">from_tuples</code><span class="sig-paren">(</span><em>*tuples</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap.from_tuples" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a dynamic map from list of &lt;path&gt; + &lt;value&gt; tuples</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>tuples: tuples that contain property path following with property value</dd>
+</dl>
+<p>Returns: a constructed dynamic map</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap.from_value">
+<em class="property">static </em><code class="descname">from_value</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap.from_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a dynamic map from free-form object by converting it into the map.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>value: a free-form object</dd>
+</dl>
+<p>Returns: a constructed DynamicMap</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap.get">
+<code class="descname">get</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap.get" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap.get_array">
+<code class="descname">get_array</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap.get_array" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap.get_array_with_default">
+<code class="descname">get_array_with_default</code><span class="sig-paren">(</span><em>path</em>, <em>default_value</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap.get_array_with_default" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap.get_boolean">
+<code class="descname">get_boolean</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap.get_boolean" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap.get_boolean_with_default">
+<code class="descname">get_boolean_with_default</code><span class="sig-paren">(</span><em>path</em>, <em>default_value</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap.get_boolean_with_default" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap.get_date">
+<code class="descname">get_date</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap.get_date" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap.get_date_with_default">
+<code class="descname">get_date_with_default</code><span class="sig-paren">(</span><em>path</em>, <em>default_value</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap.get_date_with_default" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap.get_float">
+<code class="descname">get_float</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap.get_float" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap.get_float_with_default">
+<code class="descname">get_float_with_default</code><span class="sig-paren">(</span><em>path</em>, <em>default_value</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap.get_float_with_default" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap.get_integer">
+<code class="descname">get_integer</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap.get_integer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap.get_integer_with_default">
+<code class="descname">get_integer_with_default</code><span class="sig-paren">(</span><em>path</em>, <em>default_value</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap.get_integer_with_default" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap.get_long">
+<code class="descname">get_long</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap.get_long" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap.get_long_with_default">
+<code class="descname">get_long_with_default</code><span class="sig-paren">(</span><em>path</em>, <em>default_value</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap.get_long_with_default" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap.get_map">
+<code class="descname">get_map</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap.get_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap.get_map_with_default">
+<code class="descname">get_map_with_default</code><span class="sig-paren">(</span><em>path</em>, <em>default_value</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap.get_map_with_default" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap.get_nullable_array">
+<code class="descname">get_nullable_array</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap.get_nullable_array" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap.get_nullable_boolean">
+<code class="descname">get_nullable_boolean</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap.get_nullable_boolean" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap.get_nullable_date">
+<code class="descname">get_nullable_date</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap.get_nullable_date" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap.get_nullable_float">
+<code class="descname">get_nullable_float</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap.get_nullable_float" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap.get_nullable_integer">
+<code class="descname">get_nullable_integer</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap.get_nullable_integer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap.get_nullable_long">
+<code class="descname">get_nullable_long</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap.get_nullable_long" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap.get_nullable_map">
+<code class="descname">get_nullable_map</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap.get_nullable_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap.get_nullable_string">
+<code class="descname">get_nullable_string</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap.get_nullable_string" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap.get_string">
+<code class="descname">get_string</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap.get_string" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap.get_string_with_default">
+<code class="descname">get_string_with_default</code><span class="sig-paren">(</span><em>path</em>, <em>default_value</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap.get_string_with_default" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap.has">
+<code class="descname">has</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap.has" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap.has_not">
+<code class="descname">has_not</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap.has_not" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap.merge">
+<code class="descname">merge</code><span class="sig-paren">(</span><em>source</em>, <em>deep</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap.merge" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap.merge_deep">
+<code class="descname">merge_deep</code><span class="sig-paren">(</span><em>source</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap.merge_deep" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap.omit">
+<code class="descname">omit</code><span class="sig-paren">(</span><em>*props</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap.omit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap.pick">
+<code class="descname">pick</code><span class="sig-paren">(</span><em>*props</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap.pick" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap.remove">
+<code class="descname">remove</code><span class="sig-paren">(</span><em>prop</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap.remove" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap.remove_all">
+<code class="descname">remove_all</code><span class="sig-paren">(</span><em>*props</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap.remove_all" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap.set">
+<code class="descname">set</code><span class="sig-paren">(</span><em>path</em>, <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap.set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap.set_tuples">
+<code class="descname">set_tuples</code><span class="sig-paren">(</span><em>*values</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap.set_tuples" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.portability.DynamicMap.DynamicMap.set_tuples_array">
+<code class="descname">set_tuples_array</code><span class="sig-paren">(</span><em>values</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.portability.DynamicMap.DynamicMap.set_tuples_array" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">pip_services_runtime.portability.DynamicMap module</a><ul>
+<li><a class="reference internal" href="#pip-services-runtime-portability-dynamicmap">pip_services_runtime.portability.DynamicMap</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="pip_services_runtime.html">pip_services_runtime package</a><ul>
+  <li><a href="pip_services_runtime.portability.html">pip_services_runtime.portability package</a><ul>
+      <li>Previous: <a href="pip_services_runtime.portability.Converter.html" title="previous chapter">pip_services_runtime.portability.Converter module</a></li>
+      <li>Next: <a href="pip_services_runtime.run.html" title="next chapter">pip_services_runtime.run package</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/pip_services_runtime.portability.DynamicMap.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Digital Living Software Corp..
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+      |
+      <a href="_sources/pip_services_runtime.portability.DynamicMap.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

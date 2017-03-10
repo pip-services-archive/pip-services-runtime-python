@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>pip_services_runtime.build.ComponentFactory module &mdash; Pip.Services Runtime for Python API</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Pip.Services Runtime for Python API" href="index.html" />
+    <link rel="up" title="pip_services_runtime.build package" href="pip_services_runtime.build.html" />
+    <link rel="next" title="pip_services_runtime.build.DefaultFactory module" href="pip_services_runtime.build.DefaultFactory.html" />
+    <link rel="prev" title="pip_services_runtime.build.Builder module" href="pip_services_runtime.build.Builder.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-pip_services_runtime.build.ComponentFactory">
+<span id="pip-services-runtime-build-componentfactory-module"></span><h1>pip_services_runtime.build.ComponentFactory module<a class="headerlink" href="#module-pip_services_runtime.build.ComponentFactory" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="pip-services-runtime-build-componentfactory">
+<h2>pip_services_runtime.build.ComponentFactory<a class="headerlink" href="#pip-services-runtime-build-componentfactory" title="Permalink to this headline">¶</a></h2>
+<p>Component factory implementation</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">copyright:</th><td class="field-body">Digital Living Software Corp. 2015-2016, see AUTHORS for more details.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">license:</th><td class="field-body">MIT, see LICENSE for more details.</td>
+</tr>
+</tbody>
+</table>
+<dl class="class">
+<dt id="pip_services_runtime.build.ComponentFactory.ComponentFactory">
+<em class="property">class </em><code class="descclassname">pip_services_runtime.build.ComponentFactory.</code><code class="descname">ComponentFactory</code><span class="sig-paren">(</span><em>*base_factories</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.build.ComponentFactory.ComponentFactory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pip_services_runtime.IComponentFactory.html#pip_services_runtime.IComponentFactory.IComponentFactory" title="pip_services_runtime.IComponentFactory.IComponentFactory"><code class="xref py py-class docutils literal"><span class="pre">pip_services_runtime.IComponentFactory.IComponentFactory</span></code></a></p>
+<p>Factory for microservice components. It registers component classes,
+locates classes by descriptors and creates component instances.
+It also supports inheritance from other factories.</p>
+<dl class="method">
+<dt id="pip_services_runtime.build.ComponentFactory.ComponentFactory.create">
+<code class="descname">create</code><span class="sig-paren">(</span><em>descriptor</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.build.ComponentFactory.ComponentFactory.create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a component instance using class located by component descriptor.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>descriptor: ComponentDescriptor to locate a component class.</dd>
+</dl>
+<p>Returns: a created component instance.</p>
+<dl class="docutils">
+<dt>Raises:</dt>
+<dd>MicroserviceError: when class to construct component wasn&#8217;t found, 
+when constructor failed or component doesn&#8217;t implements required interfaces.</dd>
+</dl>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="pip_services_runtime.build.ComponentFactory.ComponentFactory.create_factory">
+<em class="property">static </em><code class="descname">create_factory</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.build.ComponentFactory.ComponentFactory.create_factory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dynamically creates an instance of configuration factory based
+on configuration parameters.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>config: a configuration parameters to locate the factory class.</dd>
+</dl>
+<p>Returns: a created factory instance</p>
+<dl class="docutils">
+<dt>Raises: </dt>
+<dd>MicroserviceError: when creation wasn&#8217;t successful.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.build.ComponentFactory.ComponentFactory.extend">
+<code class="descname">extend</code><span class="sig-paren">(</span><em>*base_factories</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.build.ComponentFactory.ComponentFactory.extend" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extends this factory with base factories.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>base_factories: IComponentFactory list of base factories to extend registrations of this factory.</dd>
+</dl>
+<p>Returns: None</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.build.ComponentFactory.ComponentFactory.find">
+<code class="descname">find</code><span class="sig-paren">(</span><em>descriptor</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.build.ComponentFactory.ComponentFactory.find" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lookups for component class by matching component descriptor.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>descriptor: ComponentDescriptor used to locate a class</dd>
+</dl>
+<p>Returns: a located component class or None if component wasn&#8217;t found.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pip_services_runtime.build.ComponentFactory.ComponentFactory.register">
+<code class="descname">register</code><span class="sig-paren">(</span><em>descriptor</em>, <em>class_factory</em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services_runtime.build.ComponentFactory.ComponentFactory.register" title="Permalink to this definition">¶</a></dt>
+<dd><p>Registers a component class accompanies by component descriptor.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>descriptor: ComponentDescriptor to locate the class.
+class_factory: function used to create a component.</dd>
+</dl>
+<p>Return: a reference to this factory to support chaining registrations.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">pip_services_runtime.build.ComponentFactory module</a><ul>
+<li><a class="reference internal" href="#pip-services-runtime-build-componentfactory">pip_services_runtime.build.ComponentFactory</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="pip_services_runtime.html">pip_services_runtime package</a><ul>
+  <li><a href="pip_services_runtime.build.html">pip_services_runtime.build package</a><ul>
+      <li>Previous: <a href="pip_services_runtime.build.Builder.html" title="previous chapter">pip_services_runtime.build.Builder module</a></li>
+      <li>Next: <a href="pip_services_runtime.build.DefaultFactory.html" title="next chapter">pip_services_runtime.build.DefaultFactory module</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/pip_services_runtime.build.ComponentFactory.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Digital Living Software Corp..
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+      |
+      <a href="_sources/pip_services_runtime.build.ComponentFactory.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

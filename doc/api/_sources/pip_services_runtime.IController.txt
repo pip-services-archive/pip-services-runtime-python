@@ -1,0 +1,7 @@
+pip_services_runtime.IController module
+=======================================
+
+.. automodule:: pip_services_runtime.IController
+    :members:
+    :undoc-members:
+    :show-inheritance:

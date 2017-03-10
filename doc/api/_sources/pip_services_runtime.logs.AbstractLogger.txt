@@ -1,0 +1,7 @@
+pip_services_runtime.logs.AbstractLogger module
+===============================================
+
+.. automodule:: pip_services_runtime.logs.AbstractLogger
+    :members:
+    :undoc-members:
+    :show-inheritance:

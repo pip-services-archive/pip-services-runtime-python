@@ -1,0 +1,7 @@
+pip_services_runtime.counters.AbstractCounters module
+=====================================================
+
+.. automodule:: pip_services_runtime.counters.AbstractCounters
+    :members:
+    :undoc-members:
+    :show-inheritance:

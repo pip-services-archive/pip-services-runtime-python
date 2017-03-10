@@ -1,0 +1,7 @@
+pip_services_runtime.errors.MicroserviceError module
+====================================================
+
+.. automodule:: pip_services_runtime.errors.MicroserviceError
+    :members:
+    :undoc-members:
+    :show-inheritance:

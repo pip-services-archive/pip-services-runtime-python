@@ -1,0 +1,20 @@
+pip_services_runtime.data package
+=================================
+
+Submodules
+----------
+
+.. toctree::
+
+   pip_services_runtime.data.DataPage
+   pip_services_runtime.data.FilterParams
+   pip_services_runtime.data.IdGenerator
+   pip_services_runtime.data.PagingParams
+
+Module contents
+---------------
+
+.. automodule:: pip_services_runtime.data
+    :members:
+    :undoc-members:
+    :show-inheritance:

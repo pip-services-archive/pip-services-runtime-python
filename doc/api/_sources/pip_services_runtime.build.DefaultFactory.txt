@@ -1,0 +1,7 @@
+pip_services_runtime.build.DefaultFactory module
+================================================
+
+.. automodule:: pip_services_runtime.build.DefaultFactory
+    :members:
+    :undoc-members:
+    :show-inheritance:

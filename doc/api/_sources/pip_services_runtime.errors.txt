@@ -1,0 +1,30 @@
+pip_services_runtime.errors package
+===================================
+
+Submodules
+----------
+
+.. toctree::
+
+   pip_services_runtime.errors.BadRequestError
+   pip_services_runtime.errors.BuildError
+   pip_services_runtime.errors.CallError
+   pip_services_runtime.errors.ConfigError
+   pip_services_runtime.errors.ConflictError
+   pip_services_runtime.errors.ConnectionError
+   pip_services_runtime.errors.ErrorCategory
+   pip_services_runtime.errors.FileError
+   pip_services_runtime.errors.MicroserviceError
+   pip_services_runtime.errors.NotFoundError
+   pip_services_runtime.errors.StateError
+   pip_services_runtime.errors.UnauthorizedError
+   pip_services_runtime.errors.UnknownError
+   pip_services_runtime.errors.UnsupportedError
+
+Module contents
+---------------
+
+.. automodule:: pip_services_runtime.errors
+    :members:
+    :undoc-members:
+    :show-inheritance:

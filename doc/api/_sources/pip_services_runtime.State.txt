@@ -1,0 +1,7 @@
+pip_services_runtime.State module
+=================================
+
+.. automodule:: pip_services_runtime.State
+    :members:
+    :undoc-members:
+    :show-inheritance:

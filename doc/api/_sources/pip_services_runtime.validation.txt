@@ -1,0 +1,20 @@
+pip_services_runtime.validation package
+=======================================
+
+Submodules
+----------
+
+.. toctree::
+
+   pip_services_runtime.validation.IPropertyValidationRule
+   pip_services_runtime.validation.IValidationRule
+   pip_services_runtime.validation.PropertySchema
+   pip_services_runtime.validation.Schema
+
+Module contents
+---------------
+
+.. automodule:: pip_services_runtime.validation
+    :members:
+    :undoc-members:
+    :show-inheritance:
